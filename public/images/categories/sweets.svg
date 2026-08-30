@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g-categoriessweetssvg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6B1E2E"/>
+      <stop offset="100%" stop-color="#4A1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g-categoriessweetssvg)"/>
+  <path d="M 40 150 Q 112 159.4100121682603, 184 150.4301495637012 Q 256 149.45226685092996, 328 139.711454092391 Q 400 146.77061293345932, 472 139.5327058881389 Q 544 165.0540116346013, 616 157.72646923740254 Q 688 135.3204054490853, 760 164.34328315570778 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 330 Q 112 336.30993280588643, 184 344.3690528899924 Q 256 320.05372342286046, 328 327.3809844915246 Q 400 324.92563470725497, 472 323.8320772613215 Q 544 321.45003471658566, 616 328.1216636320594 Q 688 325.11850903846187, 760 343.5098735773469 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 510 Q 112 506.15804132088834, 184 520.3115615651207 Q 256 510.3432724628069, 328 496.93849371911506 Q 400 522.7287543292425, 472 499.0678223003417 Q 544 527.3059753322099, 616 498.18381673932 Q 688 505.24511636164516, 760 521.7218275382796 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/>
+  <circle cx="503.8" cy="300.0" r="19.1" fill="#C99A3D" opacity="0.85"/><circle cx="497.1" cy="356.1" r="17.7" fill="#FAF3E6" opacity="0.85"/><circle cx="462.9" cy="408.9" r="25.0" fill="#C99A3D" opacity="0.85"/><circle cx="400.0" cy="403.1" r="20.2" fill="#FAF3E6" opacity="0.85"/><circle cx="340.2" cy="403.6" r="24.6" fill="#C99A3D" opacity="0.85"/><circle cx="306.8" cy="353.8" r="20.8" fill="#FAF3E6" opacity="0.85"/><circle cx="283.5" cy="300.0" r="14.9" fill="#C99A3D" opacity="0.85"/><circle cx="295.0" cy="239.4" r="21.3" fill="#FAF3E6" opacity="0.85"/><circle cx="349.4" cy="212.3" r="25.4" fill="#C99A3D" opacity="0.85"/><circle cx="400.0" cy="189.7" r="22.6" fill="#FAF3E6" opacity="0.85"/><circle cx="464.6" cy="188.0" r="15.3" fill="#C99A3D" opacity="0.85"/><circle cx="504.4" cy="239.7" r="22.4" fill="#FAF3E6" opacity="0.85"/><circle cx="400" cy="300" r="29.0" fill="#FAF3E6" opacity="0.9"/>
+  <text x="400" y="552" text-anchor="middle" font-family="Georgia, serif" font-size="25.6" fill="#FAF3E6" opacity="0.9" letter-spacing="1">Sweets</text>
+</svg>

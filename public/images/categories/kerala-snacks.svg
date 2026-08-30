@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g-categorieskeralasnackssvg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C99A3D"/>
+      <stop offset="100%" stop-color="#E3C27C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g-categorieskeralasnackssvg)"/>
+  <path d="M 40 150 Q 112 140.41378233992847, 184 164.39961316467728 Q 256 137.13172696449953, 328 155.68759091482931 Q 400 160.157368086425, 472 139.91723139760273 Q 544 154.42915756667887, 616 151.1094230412242 Q 688 134.29292282303138, 760 160.5252213387915 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 330 Q 112 333.8073210174286, 184 341.17699065149304 Q 256 312.2879507786482, 328 315.7255394584785 Q 400 344.5958813657946, 472 315.6207324491151 Q 544 313.62505371647427, 616 335.8138449615368 Q 688 329.7210471608872, 760 344.3998053640064 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 510 Q 112 507.7167288378968, 184 523.898286552367 Q 256 498.6184006897904, 328 502.8775320451896 Q 400 518.6951051621652, 472 501.45392129854673 Q 544 522.9877527737876, 616 519.6000596233249 Q 688 501.3853917693583, 760 521.889691686115 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/>
+  <circle cx="506.8" cy="300.0" r="18.9" fill="#6B1E2E" opacity="0.85"/><circle cx="505.8" cy="361.1" r="15.2" fill="#FAF3E6" opacity="0.85"/><circle cx="458.6" cy="401.5" r="26.5" fill="#6B1E2E" opacity="0.85"/><circle cx="400.0" cy="407.6" r="25.3" fill="#FAF3E6" opacity="0.85"/><circle cx="336.7" cy="409.6" r="25.7" fill="#6B1E2E" opacity="0.85"/><circle cx="289.8" cy="363.6" r="21.1" fill="#FAF3E6" opacity="0.85"/><circle cx="282.4" cy="300.0" r="25.2" fill="#6B1E2E" opacity="0.85"/><circle cx="302.2" cy="243.5" r="24.3" fill="#FAF3E6" opacity="0.85"/><circle cx="337.0" cy="190.8" r="26.8" fill="#6B1E2E" opacity="0.85"/><circle cx="400.0" cy="179.9" r="26.5" fill="#FAF3E6" opacity="0.85"/><circle cx="465.9" cy="185.9" r="24.5" fill="#6B1E2E" opacity="0.85"/><circle cx="492.4" cy="246.6" r="22.8" fill="#FAF3E6" opacity="0.85"/><circle cx="400" cy="300" r="29.0" fill="#FAF3E6" opacity="0.9"/>
+  <text x="400" y="552" text-anchor="middle" font-family="Georgia, serif" font-size="25.6" fill="#FAF3E6" opacity="0.9" letter-spacing="1">Kerala Snacks</text>
+</svg>

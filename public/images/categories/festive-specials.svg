@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g-categoriesfestivespecialssvg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF3E6"/>
+      <stop offset="100%" stop-color="#E3C27C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g-categoriesfestivespecialssvg)"/>
+  <path d="M 40 150 Q 112 164.82885105053788, 184 162.4516907738152 Q 256 159.30172294126984, 328 143.27176751901408 Q 400 143.10836256026138, 472 138.01023389212895 Q 544 143.4663013419754, 616 138.21853056295168 Q 688 145.91064044638597, 760 157.6148295858349 " stroke="#6B1E2E" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 330 Q 112 346.74793215724446, 184 343.2445686623922 Q 256 320.5174330719909, 328 324.72782785134086 Q 400 319.46646066519105, 472 315.6780422707205 Q 544 339.30177806066513, 616 337.1184475238724 Q 688 340.97326949888213, 760 336.8239756718254 " stroke="#6B1E2E" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 510 Q 112 504.9651168575185, 184 520.8753413731038 Q 256 503.6716077287417, 328 496.22060721398725 Q 400 494.6067384114552, 472 499.69092910019356 Q 544 510.2461398004053, 616 521.1572367714692 Q 688 493.743589602172, 760 522.4406064410496 " stroke="#6B1E2E" stroke-width="2" fill="none" opacity="0.35"/>
+  <circle cx="513.2" cy="300.0" r="26.4" fill="#6B1E2E" opacity="0.85"/><circle cx="492.3" cy="367.1" r="17.7" fill="#6B1E2E" opacity="0.85"/><circle cx="437.4" cy="415.2" r="22.1" fill="#6B1E2E" opacity="0.85"/><circle cx="368.4" cy="397.3" r="23.8" fill="#6B1E2E" opacity="0.85"/><circle cx="315.1" cy="361.7" r="21.6" fill="#6B1E2E" opacity="0.85"/><circle cx="275.2" cy="300.0" r="22.5" fill="#6B1E2E" opacity="0.85"/><circle cx="304.1" cy="230.4" r="19.8" fill="#6B1E2E" opacity="0.85"/><circle cx="364.1" cy="189.6" r="24.0" fill="#6B1E2E" opacity="0.85"/><circle cx="440.5" cy="175.3" r="19.4" fill="#6B1E2E" opacity="0.85"/><circle cx="500.9" cy="226.7" r="21.4" fill="#6B1E2E" opacity="0.85"/><circle cx="400" cy="300" r="29.0" fill="#6B1E2E" opacity="0.9"/>
+  <text x="400" y="552" text-anchor="middle" font-family="Georgia, serif" font-size="25.6" fill="#6B1E2E" opacity="0.9" letter-spacing="1">Festive Specials</text>
+</svg>

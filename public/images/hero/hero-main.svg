@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1400" viewBox="0 0 1600 1400">
+  <defs>
+    <linearGradient id="g-heroheromainsvg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6B1E2E"/>
+      <stop offset="100%" stop-color="#4A1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1400" fill="url(#g-heroheromainsvg)"/>
+  <path d="M 80 350 Q 224 330.5233926722066, 368 372.2604484956458 Q 512 317.4928431748346, 656 331.8857222296672 Q 800 365.3298578386473, 944 316.54508817195983 Q 1088 343.61463154630235, 1232 363.54507317498656 Q 1376 376.4495172095015, 1520 380.47907146451536 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 80 769.9999999999999 Q 224 763.7291939069788, 368 789.6988418517336 Q 512 743.7925783058558, 656 740.1962187807306 Q 800 782.2705059203043, 944 747.8508930834489 Q 1088 729.1045274036977, 1232 775.4947706256919 Q 1376 772.2907643712039, 1520 796.9286665664022 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 80 1190 Q 224 1175.3794349966379, 368 1195.155389654483 Q 512 1153.602354701238, 656 1196.8182843197353 Q 800 1213.5308010592412, 944 1173.6687145671403 Q 1088 1152.8080252900795, 1232 1195.3213118641702 Q 1376 1179.430223758733, 1520 1197.6038624875496 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/>
+  <circle cx="1098.2" cy="700.0" r="59.9" fill="#C99A3D" opacity="0.85"/><circle cx="1022.9" cy="828.7" r="53.6" fill="#FAF3E6" opacity="0.85"/><circle cx="952.3" cy="963.8" r="50.1" fill="#C99A3D" opacity="0.85"/><circle cx="800.0" cy="958.6" r="39.4" fill="#FAF3E6" opacity="0.85"/><circle cx="675.3" cy="915.9" r="44.7" fill="#C99A3D" opacity="0.85"/><circle cx="553.7" cy="842.2" r="37.7" fill="#FAF3E6" opacity="0.85"/><circle cx="543.0" cy="700.0" r="54.0" fill="#C99A3D" opacity="0.85"/><circle cx="555.7" cy="559.0" r="55.8" fill="#FAF3E6" opacity="0.85"/><circle cx="646.9" cy="434.9" r="49.8" fill="#C99A3D" opacity="0.85"/><circle cx="800.0" cy="463.9" r="59.4" fill="#FAF3E6" opacity="0.85"/><circle cx="946.9" cy="445.5" r="55.2" fill="#C99A3D" opacity="0.85"/><circle cx="1000.9" cy="584.0" r="45.0" fill="#FAF3E6" opacity="0.85"/><circle cx="800" cy="700" r="67.8" fill="#FAF3E6" opacity="0.9"/>
+  <text x="800" y="1288" text-anchor="middle" font-family="Georgia, serif" font-size="51.2" fill="#FAF3E6" opacity="0.9" letter-spacing="1">Vaiga Sweets & Snacks</text>
+</svg>

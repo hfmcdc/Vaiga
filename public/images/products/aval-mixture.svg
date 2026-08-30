@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="g-productsavalmixturesvg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4F6B3A"/>
+      <stop offset="100%" stop-color="#4A1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#g-productsavalmixturesvg)"/>
+  <path d="M 40 200 Q 112 221.28233870610813, 184 218.61894368036337 Q 256 189.66770573488222, 328 194.27373536332203 Q 400 201.23557985689078, 472 183.815336516575 Q 544 210.7289927999759, 616 186.00266534195265 Q 688 186.43803919333783, 760 211.48260215053773 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 439.99999999999994 Q 112 445.1506770003127, 184 443.24294513673186 Q 256 458.6613196606387, 328 420.97781385153803 Q 400 446.50976650278056, 472 423.6744303004592 Q 544 420.1054420956461, 616 451.6509531068362 Q 688 439.9965112283793, 760 458.05510497842835 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 680 Q 112 679.5251152510989, 184 698.4198048149615 Q 256 695.527222126282, 328 681.905662748421 Q 400 697.5143155097163, 472 661.2974295906174 Q 544 691.5247984039828, 616 664.3380477137764 Q 688 676.4808091339477, 760 697.9262188977968 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/>
+  <circle cx="560.8" cy="400.0" r="22.9" fill="#C99A3D" opacity="0.85"/><circle cx="541.7" cy="491.1" r="36.1" fill="#FAF3E6" opacity="0.85"/><circle cx="464.2" cy="540.5" r="27.9" fill="#C99A3D" opacity="0.85"/><circle cx="375.4" cy="571.3" r="32.6" fill="#FAF3E6" opacity="0.85"/><circle cx="285.8" cy="531.8" r="26.6" fill="#C99A3D" opacity="0.85"/><circle cx="234.3" cy="448.6" r="26.1" fill="#FAF3E6" opacity="0.85"/><circle cx="240.2" cy="353.1" r="27.6" fill="#C99A3D" opacity="0.85"/><circle cx="311.1" cy="297.4" r="23.2" fill="#FAF3E6" opacity="0.85"/><circle cx="378.8" cy="252.5" r="35.7" fill="#C99A3D" opacity="0.85"/><circle cx="464.3" cy="259.2" r="28.6" fill="#FAF3E6" opacity="0.85"/><circle cx="537.0" cy="312.0" r="22.3" fill="#C99A3D" opacity="0.85"/><circle cx="400" cy="400" r="38.7" fill="#FAF3E6" opacity="0.9"/>
+  <text x="400" y="736" text-anchor="middle" font-family="Georgia, serif" font-size="25.6" fill="#FAF3E6" opacity="0.9" letter-spacing="1">Aval Mixture</text>
+</svg>

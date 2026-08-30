@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+  <defs>
+    <linearGradient id="g-gallerygallery09svg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF3E6"/>
+      <stop offset="100%" stop-color="#E3C27C"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="900" fill="url(#g-gallerygallery09svg)"/>
+  <path d="M 45 225 Q 126 218.24487273324735, 207 244.7245360178458 Q 288 230.73742993430926, 369 235.035907574065 Q 450 211.1108945739557, 531 204.8500155247046 Q 612 244.76934732475257, 693 229.41617671538594 Q 774 232.07807077288447, 855 245.62651079216357 " stroke="#6B1E2E" stroke-width="2" fill="none" opacity="0.35"/><path d="M 45 494.99999999999994 Q 126 493.6306522913562, 207 511.55962486428893 Q 288 469.76492190618524, 369 493.6007555392004 Q 450 491.78612362014695, 531 473.7535190238156 Q 612 516.3200718912483, 693 481.7275711073575 Q 774 505.9253876925682, 855 506.59693480472305 " stroke="#6B1E2E" stroke-width="2" fill="none" opacity="0.35"/><path d="M 45 765 Q 126 751.9941717693528, 207 764.7855450021007 Q 288 754.3589779952159, 369 753.3222424557595 Q 450 757.5353474119077, 531 744.698314198642 Q 612 751.0135094653941, 693 751.231197217032 Q 774 743.9923232663351, 855 781.7230985479064 " stroke="#6B1E2E" stroke-width="2" fill="none" opacity="0.35"/>
+  <circle cx="634.3" cy="450.0" r="31.3" fill="#6B1E2E" opacity="0.85"/><circle cx="583.4" cy="546.9" r="29.9" fill="#6B1E2E" opacity="0.85"/><circle cx="496.4" cy="592.8" r="30.9" fill="#6B1E2E" opacity="0.85"/><circle cx="390.6" cy="632.8" r="23.9" fill="#6B1E2E" opacity="0.85"/><circle cx="307.9" cy="553.2" r="41.0" fill="#6B1E2E" opacity="0.85"/><circle cx="265.5" cy="450.0" r="41.1" fill="#6B1E2E" opacity="0.85"/><circle cx="313.8" cy="351.1" r="36.3" fill="#6B1E2E" opacity="0.85"/><circle cx="396.1" cy="284.2" r="25.6" fill="#6B1E2E" opacity="0.85"/><circle cx="505.1" cy="280.3" r="25.1" fill="#6B1E2E" opacity="0.85"/><circle cx="606.3" cy="336.4" r="36.3" fill="#6B1E2E" opacity="0.85"/><circle cx="450" cy="450" r="43.6" fill="#6B1E2E" opacity="0.9"/>
+  <text x="450" y="828" text-anchor="middle" font-family="Georgia, serif" font-size="28.8" fill="#6B1E2E" opacity="0.9" letter-spacing="1">Snack Box</text>
+</svg>

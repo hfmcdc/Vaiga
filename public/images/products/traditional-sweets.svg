@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="g-productstraditionalsweetssvg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF3E6"/>
+      <stop offset="100%" stop-color="#E3C27C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#g-productstraditionalsweetssvg)"/>
+  <path d="M 40 200 Q 112 200.70949093318498, 184 219.06200726025182 Q 256 199.07824856702075, 328 181.45419388561479 Q 400 205.7312321790785, 472 185.22601008389412 Q 544 207.26504227450587, 616 189.98004805668398 Q 688 187.68785147712367, 760 214.61779741831413 " stroke="#6B1E2E" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 439.99999999999994 Q 112 425.0519429529569, 184 455.4664125073977 Q 256 436.69345133443676, 328 431.4996511014957 Q 400 461.9562729131023, 472 424.58995209209183 Q 544 434.5093590417032, 616 434.5422441260681 Q 688 416.0146656707065, 760 455.8905411558266 " stroke="#6B1E2E" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 680 Q 112 663.2964776747828, 184 699.1999972656005 Q 256 657.3612414164107, 328 662.7102803254589 Q 400 662.1845034642, 472 662.7419833461131 Q 544 697.4915957017723, 616 677.569421373001 Q 688 700.1215734594703, 760 688.1001931727859 " stroke="#6B1E2E" stroke-width="2" fill="none" opacity="0.35"/>
+  <circle cx="562.9" cy="400.0" r="35.8" fill="#6B1E2E" opacity="0.85"/><circle cx="550.7" cy="479.1" r="34.7" fill="#6B1E2E" opacity="0.85"/><circle cx="481.2" cy="517.6" r="29.6" fill="#6B1E2E" opacity="0.85"/><circle cx="416.1" cy="532.2" r="24.4" fill="#6B1E2E" opacity="0.85"/><circle cx="348.0" cy="537.0" r="35.0" fill="#6B1E2E" opacity="0.85"/><circle cx="283.0" cy="503.7" r="26.9" fill="#6B1E2E" opacity="0.85"/><circle cx="265.1" cy="433.3" r="22.7" fill="#6B1E2E" opacity="0.85"/><circle cx="236.3" cy="359.6" r="21.5" fill="#6B1E2E" opacity="0.85"/><circle cx="296.0" cy="307.9" r="28.0" fill="#6B1E2E" opacity="0.85"/><circle cx="344.0" cy="252.4" r="30.3" fill="#6B1E2E" opacity="0.85"/><circle cx="418.7" cy="246.1" r="33.4" fill="#6B1E2E" opacity="0.85"/><circle cx="499.6" cy="255.7" r="34.6" fill="#6B1E2E" opacity="0.85"/><circle cx="555.0" cy="318.6" r="26.6" fill="#6B1E2E" opacity="0.85"/><circle cx="400" cy="400" r="38.7" fill="#6B1E2E" opacity="0.9"/>
+  <text x="400" y="736" text-anchor="middle" font-family="Georgia, serif" font-size="25.6" fill="#6B1E2E" opacity="0.9" letter-spacing="1">Traditional Kerala Sweets</text>
+</svg>

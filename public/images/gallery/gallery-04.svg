@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="g-gallerygallery04svg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF3E6"/>
+      <stop offset="100%" stop-color="#E3C27C"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#g-gallerygallery04svg)"/>
+  <path d="M 45 300 Q 126 323.52140824824704, 207 328.51163110859625 Q 288 297.3956392830197, 369 308.8076350001842 Q 450 279.06310720654494, 531 272.59822163336935 Q 612 318.3718289196229, 693 281.35405417480166 Q 774 266.9746468132126, 855 308.76596856648666 " stroke="#6B1E2E" stroke-width="2" fill="none" opacity="0.35"/><path d="M 45 660 Q 126 684.3287180590711, 207 685.5966636415205 Q 288 673.1221138100345, 369 643.9587427173273 Q 450 636.9051617243375, 531 633.3873168783667 Q 612 675.2407166839025, 693 655.2686587943438 Q 774 670.9544470971026, 855 674.1785962556414 " stroke="#6B1E2E" stroke-width="2" fill="none" opacity="0.35"/><path d="M 45 1020 Q 126 994.7058197322356, 207 1037.1123391280537 Q 288 990.6748587253269, 369 1031.4980067597535 Q 450 1013.0692732865637, 531 995.9164082146267 Q 612 1039.5181137579661, 693 1026.5671486706062 Q 774 1049.959816737063, 855 1048.6392591503215 " stroke="#6B1E2E" stroke-width="2" fill="none" opacity="0.35"/>
+  <circle cx="610.6" cy="600.0" r="26.4" fill="#6B1E2E" opacity="0.85"/><circle cx="608.4" cy="715.1" r="22.5" fill="#6B1E2E" opacity="0.85"/><circle cx="496.3" cy="742.6" r="30.6" fill="#6B1E2E" opacity="0.85"/><circle cx="403.5" cy="743.2" r="39.4" fill="#6B1E2E" opacity="0.85"/><circle cx="294.8" cy="712.7" r="41.2" fill="#6B1E2E" opacity="0.85"/><circle cx="271.2" cy="600.0" r="35.8" fill="#6B1E2E" opacity="0.85"/><circle cx="300.6" cy="491.5" r="28.2" fill="#6B1E2E" opacity="0.85"/><circle cx="391.5" cy="420.0" r="32.6" fill="#6B1E2E" opacity="0.85"/><circle cx="504.2" cy="433.1" r="26.9" fill="#6B1E2E" opacity="0.85"/><circle cx="586.8" cy="500.6" r="34.1" fill="#6B1E2E" opacity="0.85"/><circle cx="450" cy="600" r="43.6" fill="#6B1E2E" opacity="0.9"/>
+  <text x="450" y="1104" text-anchor="middle" font-family="Georgia, serif" font-size="28.8" fill="#6B1E2E" opacity="0.9" letter-spacing="1">Festive Products</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="g-productssharkaravarattisvg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6B1E2E"/>
+      <stop offset="100%" stop-color="#4A1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#g-productssharkaravarattisvg)"/>
+  <path d="M 40 200 Q 112 208.30558411805478, 184 218.66846944833335 Q 256 223.90238162866083, 328 186.36449958358352 Q 400 202.26183697046883, 472 186.98975630938173 Q 544 188.2899786124844, 616 197.36647671159403 Q 688 213.46341993423496, 760 213.59048109838278 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 439.99999999999994 Q 112 427.7005460371268, 184 449.5534992292642 Q 256 436.04811754454676, 328 421.75958915813584 Q 400 439.0538639789948, 472 425.53080807800853 Q 544 451.1600700571761, 616 428.3140694132036 Q 688 425.9472043532386, 760 449.5547465612607 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 680 Q 112 663.5403511147391, 184 678.030956763364 Q 256 660.0053161270966, 328 681.850500334676 Q 400 660.1122903340611, 472 660.8570847210184 Q 544 689.8470829444444, 616 692.6526904003291 Q 688 656.5172448088575, 760 696.6252749997058 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/>
+  <circle cx="559.9" cy="400.0" r="20.7" fill="#C99A3D" opacity="0.85"/><circle cx="536.4" cy="499.1" r="24.7" fill="#FAF3E6" opacity="0.85"/><circle cx="449.3" cy="551.6" r="22.1" fill="#C99A3D" opacity="0.85"/><circle cx="348.2" cy="559.5" r="29.6" fill="#FAF3E6" opacity="0.85"/><circle cx="292.1" cy="478.4" r="20.3" fill="#C99A3D" opacity="0.85"/><circle cx="267.0" cy="400.0" r="20.9" fill="#FAF3E6" opacity="0.85"/><circle cx="289.0" cy="319.3" r="24.6" fill="#C99A3D" opacity="0.85"/><circle cx="353.9" cy="258.1" r="23.1" fill="#FAF3E6" opacity="0.85"/><circle cx="451.9" cy="240.1" r="20.0" fill="#C99A3D" opacity="0.85"/><circle cx="532.1" cy="304.0" r="23.4" fill="#FAF3E6" opacity="0.85"/><circle cx="400" cy="400" r="38.7" fill="#FAF3E6" opacity="0.9"/>
+  <text x="400" y="736" text-anchor="middle" font-family="Georgia, serif" font-size="25.6" fill="#FAF3E6" opacity="0.9" letter-spacing="1">Sharkara Varatti</text>
+</svg>

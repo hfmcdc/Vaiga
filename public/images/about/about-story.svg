@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1400" viewBox="0 0 1200 1400">
+  <defs>
+    <linearGradient id="g-aboutaboutstorysvg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6B1E2E"/>
+      <stop offset="100%" stop-color="#4A1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1400" fill="url(#g-aboutaboutstorysvg)"/>
+  <path d="M 60 350 Q 168 325.37580397853236, 276 353.6616525848921 Q 384 380.1747212914515, 492 328.9777923473868 Q 600 381.86382242652013, 708 334.91658918235464 Q 816 321.35634618378833, 924 373.06052745142597 Q 1032 379.28812495180233, 1140 377.93012214325154 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 60 769.9999999999999 Q 168 744.1755625495458, 276 791.9081219735416 Q 384 751.8195445256489, 492 757.5568296006325 Q 600 754.8652848981927, 708 751.1546713925628 Q 816 796.5883494770045, 924 754.1375449405419 Q 1032 783.0431044148681, 1140 798.0535437567522 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 60 1190 Q 168 1205.1318386617413, 276 1223.2482438996892 Q 384 1183.3373832398443, 492 1199.419473886411 Q 600 1152.0844012220246, 708 1156.4156063979508 Q 816 1226.7191922373318, 924 1169.8817699926456 Q 1032 1197.0137679102027, 1140 1218.5172725725743 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/>
+  <circle cx="822.7" cy="700.0" r="44.0" fill="#C99A3D" opacity="0.85"/><circle cx="790.5" cy="800.0" r="48.2" fill="#FAF3E6" opacity="0.85"/><circle cx="717.0" cy="869.6" r="50.0" fill="#C99A3D" opacity="0.85"/><circle cx="628.6" cy="935.3" r="49.5" fill="#FAF3E6" opacity="0.85"/><circle cx="514.7" cy="925.0" r="40.0" fill="#C99A3D" opacity="0.85"/><circle cx="423.8" cy="856.1" r="53.5" fill="#FAF3E6" opacity="0.85"/><circle cx="350.7" cy="761.4" r="35.3" fill="#C99A3D" opacity="0.85"/><circle cx="358.0" cy="640.4" r="51.3" fill="#FAF3E6" opacity="0.85"/><circle cx="442.0" cy="560.0" r="37.8" fill="#C99A3D" opacity="0.85"/><circle cx="517.5" cy="482.4" r="51.0" fill="#FAF3E6" opacity="0.85"/><circle cx="627.6" cy="472.5" r="49.6" fill="#C99A3D" opacity="0.85"/><circle cx="742.7" cy="493.2" r="53.2" fill="#FAF3E6" opacity="0.85"/><circle cx="782.6" cy="604.2" r="45.7" fill="#C99A3D" opacity="0.85"/><circle cx="600" cy="700" r="58.1" fill="#FAF3E6" opacity="0.9"/>
+  <text x="600" y="1288" text-anchor="middle" font-family="Georgia, serif" font-size="38.4" fill="#FAF3E6" opacity="0.9" letter-spacing="1">Our Story · Since 2020</text>
+</svg>

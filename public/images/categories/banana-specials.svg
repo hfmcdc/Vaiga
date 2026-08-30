@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g-categoriesbananaspecialssvg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4F6B3A"/>
+      <stop offset="100%" stop-color="#4A1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g-categoriesbananaspecialssvg)"/>
+  <path d="M 40 150 Q 112 158.85558890258483, 184 162.73419349017155 Q 256 135.50212093582576, 328 137.0475980430207 Q 400 151.65018908274376, 472 140.01123102073996 Q 544 148.195747714672, 616 159.65687408121653 Q 688 147.04816244081422, 760 157.48208340551344 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 330 Q 112 339.21740550474954, 184 342.4033508471631 Q 256 334.24333840072467, 328 318.2470605293294 Q 400 331.1454806953161, 472 316.1889081709517 Q 544 332.85111025055045, 616 322.81498431660884 Q 688 313.943335099093, 760 344.0867113457189 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 510 Q 112 506.4864722997755, 184 523.8996461139702 Q 256 512.8405425649514, 328 512.8675472448951 Q 400 504.3237836829608, 472 497.13112479972443 Q 544 503.58081051109434, 616 508.6700653862039 Q 688 511.95523755248195, 760 524.3366363327515 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/>
+  <circle cx="527.1" cy="300.0" r="25.8" fill="#C99A3D" opacity="0.85"/><circle cx="485.3" cy="354.8" r="26.3" fill="#FAF3E6" opacity="0.85"/><circle cx="444.2" cy="396.8" r="22.0" fill="#C99A3D" opacity="0.85"/><circle cx="385.7" cy="399.3" r="19.2" fill="#FAF3E6" opacity="0.85"/><circle cx="314.5" cy="398.6" r="15.5" fill="#C99A3D" opacity="0.85"/><circle cx="292.7" cy="331.5" r="19.0" fill="#FAF3E6" opacity="0.85"/><circle cx="287.2" cy="266.9" r="22.7" fill="#C99A3D" opacity="0.85"/><circle cx="327.3" cy="216.1" r="25.4" fill="#FAF3E6" opacity="0.85"/><circle cx="384.4" cy="191.6" r="23.9" fill="#C99A3D" opacity="0.85"/><circle cx="448.1" cy="194.6" r="16.7" fill="#FAF3E6" opacity="0.85"/><circle cx="493.1" cy="240.2" r="18.0" fill="#C99A3D" opacity="0.85"/><circle cx="400" cy="300" r="29.0" fill="#FAF3E6" opacity="0.9"/>
+  <text x="400" y="552" text-anchor="middle" font-family="Georgia, serif" font-size="25.6" fill="#FAF3E6" opacity="0.9" letter-spacing="1">Banana Specials</text>
+</svg>

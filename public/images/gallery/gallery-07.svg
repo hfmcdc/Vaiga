@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1000" viewBox="0 0 900 1000">
+  <defs>
+    <linearGradient id="g-gallerygallery07svg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4F6B3A"/>
+      <stop offset="100%" stop-color="#4A1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1000" fill="url(#g-gallerygallery07svg)"/>
+  <path d="M 45 250 Q 126 253.33705123824726, 207 251.4934639218995 Q 288 252.95683305054607, 369 250.34191621912734 Q 450 245.76163212374004, 531 231.706619407785 Q 612 233.3035078396122, 693 237.2893831801276 Q 774 255.7102627919151, 855 273.0289932879256 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 45 550 Q 126 557.1966742139278, 207 573.5625001845551 Q 288 573.5506525575655, 369 543.4783215003599 Q 450 576.1591363383077, 531 526.0278702472473 Q 612 521.2936201331146, 693 531.7643173350502 Q 774 536.9350741495705, 855 569.4652620310001 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 45 850 Q 126 832.8980544236471, 207 855.9037463425288 Q 288 821.1309382329983, 369 826.4426307482361 Q 450 866.7133227146355, 531 832.8862108041768 Q 612 847.1817108962515, 693 834.1263543883796 Q 774 857.9814877621657, 855 857.4886150887492 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/>
+  <circle cx="644.6" cy="500.0" r="36.9" fill="#C99A3D" opacity="0.85"/><circle cx="585.4" cy="598.4" r="27.0" fill="#FAF3E6" opacity="0.85"/><circle cx="505.6" cy="671.0" r="30.8" fill="#C99A3D" opacity="0.85"/><circle cx="389.6" cy="685.8" r="30.1" fill="#FAF3E6" opacity="0.85"/><circle cx="302.7" cy="607.0" r="37.3" fill="#C99A3D" opacity="0.85"/><circle cx="297.5" cy="500.0" r="39.0" fill="#FAF3E6" opacity="0.85"/><circle cx="308.6" cy="397.2" r="33.1" fill="#C99A3D" opacity="0.85"/><circle cx="394.3" cy="328.5" r="28.4" fill="#FAF3E6" opacity="0.85"/><circle cx="501.7" cy="340.8" r="29.6" fill="#C99A3D" opacity="0.85"/><circle cx="598.5" cy="392.1" r="35.4" fill="#FAF3E6" opacity="0.85"/><circle cx="450" cy="500" r="43.6" fill="#FAF3E6" opacity="0.9"/>
+  <text x="450" y="920" text-anchor="middle" font-family="Georgia, serif" font-size="28.8" fill="#FAF3E6" opacity="0.9" letter-spacing="1">Brand</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="g-productsachappamsvg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C99A3D"/>
+      <stop offset="100%" stop-color="#E3C27C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#g-productsachappamsvg)"/>
+  <path d="M 40 200 Q 112 220.54006563549868, 184 214.3972889360298 Q 256 211.3189433545982, 328 190.87591540995953 Q 400 216.17505821601958, 472 185.9427017089714 Q 544 182.18890436570058, 616 185.90051051683196 Q 688 211.23819757554512, 760 204.84276671002124 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 439.99999999999994 Q 112 460.1419640371035, 184 454.1095431322869 Q 256 427.23734660003083, 328 445.5275447491013 Q 400 443.77870198691136, 472 424.23862514858104 Q 544 451.3094654784625, 616 442.1141084727863 Q 688 438.75491206977034, 760 457.4557545890929 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/><path d="M 40 680 Q 112 672.2021893637275, 184 693.3145143315437 Q 256 695.0466971388522, 328 685.3685346413534 Q 400 698.1025484894426, 472 665.7667531071779 Q 544 684.8656117141858, 616 663.6462541919872 Q 688 699.0188416270714, 760 690.2663197688873 " stroke="#FAF3E6" stroke-width="2" fill="none" opacity="0.35"/>
+  <circle cx="532.9" cy="400.0" r="36.0" fill="#6B1E2E" opacity="0.85"/><circle cx="521.2" cy="463.6" r="20.6" fill="#FAF3E6" opacity="0.85"/><circle cx="476.3" cy="510.5" r="23.8" fill="#6B1E2E" opacity="0.85"/><circle cx="418.6" cy="552.8" r="23.2" fill="#FAF3E6" opacity="0.85"/><circle cx="344.1" cy="547.4" r="28.1" fill="#6B1E2E" opacity="0.85"/><circle cx="274.1" cy="511.6" r="28.0" fill="#FAF3E6" opacity="0.85"/><circle cx="241.7" cy="439.0" r="31.9" fill="#6B1E2E" opacity="0.85"/><circle cx="237.6" cy="360.0" r="28.3" fill="#FAF3E6" opacity="0.85"/><circle cx="295.9" cy="307.8" r="36.2" fill="#6B1E2E" opacity="0.85"/><circle cx="338.7" cy="238.3" r="28.3" fill="#FAF3E6" opacity="0.85"/><circle cx="421.1" cy="226.2" r="23.1" fill="#6B1E2E" opacity="0.85"/><circle cx="486.0" cy="275.4" r="34.4" fill="#FAF3E6" opacity="0.85"/><circle cx="548.7" cy="322.0" r="35.5" fill="#6B1E2E" opacity="0.85"/><circle cx="400" cy="400" r="38.7" fill="#FAF3E6" opacity="0.9"/>
+  <text x="400" y="736" text-anchor="middle" font-family="Georgia, serif" font-size="25.6" fill="#FAF3E6" opacity="0.9" letter-spacing="1">Achappam</text>
+</svg>
