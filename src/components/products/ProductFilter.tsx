@@ -4,10 +4,10 @@ import { useMemo, useState } from "react";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import ProductCard from "@/components/products/ProductCard";
 import Reveal from "@/components/ui/Reveal";
-import { products } from "@/data/products";
+import type { Product } from "@/data/products";
 import { categories } from "@/data/categories";
 
-export default function ProductFilter() {
+export default function ProductFilter({ products }: { products: Product[] }) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
@@ -17,7 +17,7 @@ export default function ProductFilter() {
   const filtered = useMemo(() => {
     if (active === "all") return products;
     return products.filter((p) => p.category === active);
-  }, [active]);
+  }, [active, products]);
 
   function selectCategory(slug: string) {
     setActive(slug);

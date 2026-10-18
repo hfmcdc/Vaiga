@@ -195,3 +195,12 @@ scripts/
 - The Google Maps embed and business address in `src/data/site.ts` are
   placeholders — replace with your real address and a map embed URL
   from Google Maps → Share → Embed a map.
+
+## 14. Admin panel (/admin)
+
+Go to `/admin` → enter the **secret code** and **password** → add, edit, delete products and upload photos.
+
+1. Copy `.env.example` to `.env.local` and set `ADMIN_CODE`, `ADMIN_PASSWORD`, `ADMIN_SECRET`. If any is missing, the admin stays locked.
+2. Products are stored in `data/products.json`; uploaded photos in `data/uploads/`.
+3. **Important:** this simple file storage works on your own PC or a VPS/server. It does **not** save on Vercel (read-only disk). For Vercel, switch `src/lib/productStore.ts` to a database (Vercel Blob/KV, Supabase, etc.).
+4. Back up the `data/` folder regularly.

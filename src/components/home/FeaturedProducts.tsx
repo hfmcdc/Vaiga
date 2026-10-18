@@ -3,10 +3,10 @@ import { ArrowRight } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
 import ProductCard from "@/components/products/ProductCard";
-import { getFeaturedProducts } from "@/data/products";
+import { getFeaturedProducts } from "@/lib/productStore";
 
-export default function FeaturedProducts() {
-  const featured = getFeaturedProducts();
+export default async function FeaturedProducts() {
+  const featured = await getFeaturedProducts();
 
   return (
     <section className="bg-cream-soft">
