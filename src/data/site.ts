@@ -19,26 +19,26 @@ export const siteConfig = {
   url: "https://www.vaigasweets.com",
 
   // Phone number shown to customers (any readable format is fine here).
-  phone: process.env.NEXT_PUBLIC_PHONE_NUMBER || "+91 90000 00000",
+  phone: process.env.NEXT_PUBLIC_PHONE_NUMBER || "+91 82818 96001",
 
   // WhatsApp number used to build wa.me links. Digits only, with country code,
   // no "+" or spaces (e.g. 919000000000 for an Indian number).
   whatsappNumber: digitsOnly(
-    process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919000000000"
+    process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "918281896001"
   ),
 
   email: process.env.NEXT_PUBLIC_EMAIL || "hello@vaigasweets.com",
 
   address: {
-    line1: "Vaiga Sweets & Snacks",
-    line2: "Your Street / Building Name",
-    city: "Your City",
+    line1: "Lekshmi Nivas",
+    line2: "T D Nagar 1",
+    city: "Kollam",
     state: "Kerala",
-    postalCode: "000000",
+    postalCode: "691001",
     country: "India",
     // Replace with a real embed URL from Google Maps → Share → Embed a map.
     mapEmbedUrl:
-      "https://www.google.com/maps?q=Kerala,India&output=embed",
+      "https://www.google.com/maps?q=T+D+Nagar,+Kollam,+Kerala&output=embed",
   },
 
   hours: [

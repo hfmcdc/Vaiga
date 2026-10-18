@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight, MessageCircle, Phone } from "lucide-react";
 import { siteConfig } from "@/data/site";
-import { buildWhatsAppLink } from "@/lib/whatsapp";
+import { buildWhatsAppLink, buildTelLink } from "@/lib/whatsapp";
 
 export default function Hero() {
   return (
@@ -43,24 +43,24 @@ export default function Hero() {
               <MessageCircle size={16} aria-hidden="true" />
               Order Now
             </a>
+            <a
+              href={buildTelLink()}
+              className="inline-flex items-center gap-2 rounded-full border-2 border-brown px-6 py-3.5 text-sm font-semibold text-brown transition-all hover:bg-brown hover:text-cream-soft"
+            >
+              <Phone size={16} aria-hidden="true" />
+              Call {siteConfig.phone}
+            </a>
           </div>
         </div>
 
         <div className="order-1 lg:order-2 relative animate-fade-in">
           <div
-            className="relative mx-auto aspect-[4/3.5] w-full max-w-md lg:max-w-none overflow-hidden shadow-[0_30px_60px_-20px_rgba(58,35,23,0.4)]"
+            className="relative mx-auto aspect-[4/3.5] w-full max-w-md lg:max-w-none overflow-hidden bg-gold shadow-[0_30px_60px_-20px_rgba(58,35,23,0.4)]"
             style={{
               borderRadius: "62% 38% 55% 45% / 48% 45% 55% 52%",
             }}
           >
-            <Image
-              src="/images/hero/hero-main.svg"
-              alt="A spread of traditional Vaiga sweets and Kerala snacks"
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 1024px) 90vw, 45vw"
-            />
+            <Image src="/images/logo.png" alt="Vaiga Sweets & Snacks logo" fill priority className="object-contain p-6" sizes="(max-width: 1024px) 90vw, 45vw" />
           </div>
           <div className="absolute -bottom-4 -left-4 h-20 w-20 sm:h-24 sm:w-24 rounded-full bg-gold/90 pookalam-accent opacity-70" />
         </div>

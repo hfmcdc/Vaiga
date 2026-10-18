@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { siteConfig } from "@/data/site";
@@ -35,10 +36,7 @@ export default function Navbar() {
           href="/"
           className="flex items-baseline gap-2 font-display text-xl sm:text-2xl font-semibold text-maroon"
         >
-          Vaiga
-          <span className="hidden sm:inline text-xs font-sans font-medium tracking-[0.2em] uppercase text-brown/60">
-            Sweets &amp; Snacks
-          </span>
+          <Image src="/images/logo-small.png" alt="Vaiga Sweets & Snacks" width={256} height={170} priority className="h-12 w-auto sm:h-14" />
         </Link>
 
         <ul className="hidden md:flex items-center gap-8 font-medium text-brown/85">

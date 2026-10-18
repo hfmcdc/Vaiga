@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --color-maroon: #6b1e2e;
-  --color-maroon-dark: #4a1220;
-  --color-cream: #faf3e6;
-  --color-cream-soft: #fffdf9;
-  --color-gold: #c99a3d;
-  --color-gold-soft: #e3c27c;
-  --color-brown: #3a2317;
+  --color-maroon: #c2410c;
+  --color-maroon-dark: #9a3412;
+  --color-cream: #fff8dc;
+  --color-cream-soft: #fffdf5;
+  --color-gold: #f5b800;
+  --color-gold-soft: #ffe04d;
+  --color-brown: #1f1409;
   --color-green: #4f6b3a;
 }
 
