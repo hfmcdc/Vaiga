@@ -9,6 +9,15 @@ const PLACEHOLDER = "/images/products/traditional-sweets.svg";
 const err = (m: string, s = 400) => NextResponse.json({ error: m }, { status: s });
 const done = () => revalidatePath("/", "layout");
 
+const safe = (h: (req: Request) => Promise<Response>) => async (req: Request) => {
+  try {
+    return await h(req);
+  } catch (e) {
+    console.error(e);
+    return err(e instanceof Error ? e.message : "Server error", 500);
+  }
+};
+
 function clean(b: Record<string, unknown>): Product | string {
   const name = String(b.name ?? "").trim().slice(0, 80);
   const category = String(b.category ?? "");
@@ -25,12 +34,12 @@ function clean(b: Record<string, unknown>): Product | string {
   };
 }
 
-export async function GET() {
+async function GET_() {
   if (!(await isAdmin())) return err("Unauthorized", 401);
   return NextResponse.json(await getProducts());
 }
 
-export async function POST(req: Request) {
+async function POST_(req: Request) {
   if (!(await isAdmin())) return err("Unauthorized", 401);
   const p = clean(await req.json().catch(() => ({})));
   if (typeof p === "string") return err(p);
@@ -43,7 +52,7 @@ export async function POST(req: Request) {
   return NextResponse.json({ ok: true });
 }
 
-export async function PUT(req: Request) {
+async function PUT_(req: Request) {
   if (!(await isAdmin())) return err("Unauthorized", 401);
   const body = await req.json().catch(() => ({}));
   const p = clean(body);
@@ -56,7 +65,7 @@ export async function PUT(req: Request) {
   return NextResponse.json({ ok: true });
 }
 
-export async function DELETE(req: Request) {
+async function DELETE_(req: Request) {
   if (!(await isAdmin())) return err("Unauthorized", 401);
   const slug = new URL(req.url).searchParams.get("slug");
   const list = await getProducts();
@@ -65,3 +74,8 @@ export async function DELETE(req: Request) {
   await saveProducts(next); done();
   return NextResponse.json({ ok: true });
 }
+
+export const GET = safe(GET_);
+export const POST = safe(POST_);
+export const PUT = safe(PUT_);
+export const DELETE = safe(DELETE_);

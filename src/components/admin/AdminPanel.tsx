@@ -47,7 +47,8 @@ export default function AdminPanel({ initial }: { initial: Product[] }) {
   async function del(p: Product) {
     if (!confirm(`Delete "${p.name}"?`)) return;
     const r = await fetch(`/api/admin/products?slug=${encodeURIComponent(p.slug)}`, { method: "DELETE" });
-    setMsg(r.ok ? "Deleted ✓" : "Could not delete");
+    const d = await r.json().catch(() => ({}));
+    setMsg(r.ok ? "Deleted ✓" : `Could not delete: ${d.error || r.status}`);
     reload();
   }
 
