@@ -15,7 +15,7 @@ function clean(b: Record<string, unknown>): Product | string {
   const image = String(b.image ?? "").trim() || PLACEHOLDER;
   if (!name) return "Name is required";
   if (!categories.some((c) => c.slug === category)) return "Pick a valid category";
-  if (!image.startsWith("/") || image.length > 200) return "Invalid image path";
+  if (!(image.startsWith("/") || image.startsWith("https://")) || image.length > 300) return "Invalid image path";
   return {
     slug: String(b.slug ?? ""), name,
     description: String(b.description ?? "").trim().slice(0, 300),
