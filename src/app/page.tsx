@@ -6,7 +6,6 @@ import FeaturedProducts from "@/components/home/FeaturedProducts";
 import FestiveBanner from "@/components/home/FestiveBanner";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import Testimonials from "@/components/home/Testimonials";
-import GalleryPreview from "@/components/home/GalleryPreview";
 import LeafDivider from "@/components/ui/LeafDivider";
 
 export const metadata: Metadata = {
@@ -29,7 +28,6 @@ export default function HomePage() {
       <LeafDivider toColor="var(--color-cream)" />
       <WhyChooseUs />
       <Testimonials />
-      <GalleryPreview />
     </>
   );
 }

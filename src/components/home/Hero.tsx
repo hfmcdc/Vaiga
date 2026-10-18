@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8 pt-10 sm:pt-14 pb-16 sm:pb-24 grid lg:grid-cols-2 gap-12 items-center">
         <div className="animate-fade-up order-2 lg:order-1">
           <p className="inline-flex items-center gap-2 rounded-full bg-maroon/10 px-4 py-1.5 text-xs font-semibold tracking-[0.2em] uppercase text-maroon">
-            Since {siteConfig.since}
+            🪔 Happy Diwali 2026
           </p>
           <h1 className="mt-5 font-display text-4xl sm:text-5xl md:text-6xl font-semibold leading-[1.05] text-brown">
             Vaiga Sweets
@@ -22,8 +22,8 @@ export default function Hero() {
             {siteConfig.tagline}
           </p>
           <p className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-brown/75">
-            Bringing authentic sweets, traditional snacks and homemade
-            goodness to your celebrations since {siteConfig.since}.
+            Light up this Diwali with fresh, traditional sweets and snacks —
+            made with love in Kollam since {siteConfig.since}. Diwali Sweet Box 2026 is revealing soon!
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-4">

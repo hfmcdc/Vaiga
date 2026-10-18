@@ -4,8 +4,7 @@ import Reveal from "@/components/ui/Reveal";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 
 /**
- * Update the occasion copy below ahead of Onam, Janmashtami, Vishu,
- * Diwali, Christmas, weddings or any other seasonal push.
+ * Diwali 2026 banner. Swap the copy here for the next festival.
  */
 export default function FestiveBanner() {
   return (
@@ -25,24 +24,25 @@ export default function FestiveBanner() {
         <Reveal>
           <span className="inline-flex items-center gap-2 rounded-full bg-cream-soft/15 px-4 py-1.5 text-xs font-semibold tracking-[0.2em] uppercase text-gold-soft">
             <CalendarHeart size={14} aria-hidden="true" />
-            Festive Pre-Orders Open
+            🪔 Revealing Soon
           </span>
           <h2 className="mt-5 font-display text-3xl sm:text-4xl md:text-5xl font-semibold text-cream-soft leading-tight">
-            Make Your Celebrations Sweeter
+            Diwali Sweet Box 2026
           </h2>
           <p className="mt-5 max-w-2xl mx-auto text-base sm:text-lg text-cream-soft/85 leading-relaxed">
-            Pre-order our special festive sweets and traditional snacks for
-            your celebrations — Onam, Janmashtami, Vishu, weddings and more.
+            A beautifully packed box of our finest Diwali sweets and snacks —
+            perfect for gifting family and friends. We're putting the final
+            touches on it. Message us to be the first to know!
           </p>
           <a
             href={buildWhatsAppLink(
-              "Hi Vaiga Sweets & Snacks! I'd like to place a festive pre-order."
+              "Hi Vaiga Sweets & Snacks! Please notify me when the Diwali Sweet Box 2026 is revealed."
             )}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-brown transition-all hover:bg-gold-soft hover:-translate-y-0.5"
           >
-            Pre-Order Now
+            Notify Me on WhatsApp
           </a>
         </Reveal>
       </div>

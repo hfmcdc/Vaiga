@@ -36,6 +36,8 @@ export async function saveProducts(list: Product[]) {
     });
     return;
   }
+  if (process.env.VERCEL)
+    throw new Error("Blob storage is not connected. In Vercel: Storage → Create Blob → Connect to this project, then Redeploy.");
   const tmp = FILE + ".tmp";
   await fs.writeFile(tmp, json);
   await fs.rename(tmp, FILE);
@@ -47,6 +49,8 @@ export async function saveImage(buf: Buffer, ext: string, contentType: string) {
     const b = await put(`uploads/${name}`, buf, { access: "public", contentType, addRandomSuffix: false });
     return b.url;
   }
+  if (process.env.VERCEL)
+    throw new Error("Blob storage is not connected. In Vercel: Storage → Create Blob → Connect to this project, then Redeploy.");
   await fs.mkdir(path.join(DATA_DIR, "uploads"), { recursive: true });
   await fs.writeFile(path.join(DATA_DIR, "uploads", name), buf);
   return `/api/img/${name}`;

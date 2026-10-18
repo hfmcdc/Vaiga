@@ -15,7 +15,7 @@ export const siteConfig = {
   tagline: "Traditional Taste. Made with Love.",
   since: 2020,
   description:
-    "Vaiga Sweets & Snacks — traditional Kerala sweets, snacks and festive favourites made with care since 2020. Order fresh sweets and snacks for your celebrations.",
+    "Vaiga Sweets & Snacks — Diwali sweets, traditional Kerala sweets and snacks made with care since 2020. Pre-order your Diwali Sweet Box 2026 in Kollam.",
   url: "https://www.vaigasweets.com",
 
   // Phone number shown to customers (any readable format is fine here).
@@ -27,7 +27,7 @@ export const siteConfig = {
     process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "918281896001"
   ),
 
-  email: process.env.NEXT_PUBLIC_EMAIL || "hello@vaigasweets.com",
+  email: process.env.NEXT_PUBLIC_EMAIL || "vaigasweetsandsnackskollam@gmail.com",
 
   address: {
     line1: "Lekshmi Nivas",
@@ -55,7 +55,6 @@ export const siteConfig = {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Products", href: "/products" },
-    { label: "Gallery", href: "/gallery" },
     { label: "Contact", href: "/contact" },
   ],
 } as const;

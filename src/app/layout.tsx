@@ -9,6 +9,7 @@ import "@fontsource/work-sans/600.css";
 import "@fontsource/work-sans/700.css";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
+import DiwaliStrip from "@/components/layout/DiwaliStrip";
 import Footer from "@/components/layout/Footer";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
 import { siteConfig } from "@/data/site";
@@ -85,6 +86,7 @@ export default function RootLayout({
         >
           Skip to main content
         </a>
+        <DiwaliStrip />
         <Navbar />
         <main id="main-content" className="flex-1">
           {children}
