@@ -3,12 +3,13 @@ import Image from "next/image";
 import { HeartHandshake, Leaf, Sparkles, PartyPopper } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
-import { siteConfig } from "@/data/site";
+import { siteConfig as staticSite } from "@/data/site";
+import { getLiveSite } from "@/lib/siteStore";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: `The story of ${siteConfig.name}, a Kerala sweets and snacks brand serving customers with tradition and care since ${siteConfig.since}.`,
+  description: `The story of ${staticSite.name}, a Kerala sweets and snacks brand serving customers with tradition and care since ${staticSite.since}.`,
 };
 
 const pillars = [
@@ -18,7 +19,8 @@ const pillars = [
   { icon: PartyPopper, label: "Festive celebrations" },
 ];
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const siteConfig = await getLiveSite();
   return (
     <div className="bg-cream">
       <section className="mx-auto max-w-7xl px-5 sm:px-8 pt-14 pb-16 sm:pb-24 grid lg:grid-cols-2 gap-12 items-center">
@@ -91,7 +93,7 @@ export default function AboutPage() {
               description="Ready to order, or have a question about a festive box? We're one message away."
             />
             <a
-              href={buildWhatsAppLink()}
+              href={buildWhatsAppLink(undefined, siteConfig)}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-8 inline-flex items-center gap-2 rounded-full bg-maroon px-7 py-3.5 text-sm font-semibold text-cream-soft transition-all hover:bg-maroon-dark hover:-translate-y-0.5"

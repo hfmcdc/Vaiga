@@ -1,17 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, MessageCircle, Phone } from "lucide-react";
-import { siteConfig } from "@/data/site";
+import { getLiveSite } from "@/lib/siteStore";
 import { buildWhatsAppLink, buildTelLink } from "@/lib/whatsapp";
 
-export default function Hero() {
+export default async function Hero() {
+  const siteConfig = await getLiveSite();
   return (
     <section className="relative overflow-hidden bg-cream">
       <div className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full pookalam-accent opacity-40" />
       <div className="mx-auto max-w-7xl px-5 sm:px-8 pt-10 sm:pt-14 pb-16 sm:pb-24 grid lg:grid-cols-2 gap-12 items-center">
         <div className="animate-fade-up order-2 lg:order-1">
           <p className="inline-flex items-center gap-2 rounded-full bg-maroon/10 px-4 py-1.5 text-xs font-semibold tracking-[0.2em] uppercase text-maroon">
-            🪔 Happy Diwali 2026
+            {siteConfig.content.heroEyebrow}
           </p>
           <h1 className="mt-5 font-display text-4xl sm:text-5xl md:text-6xl font-semibold leading-[1.05] text-brown">
             Vaiga Sweets
@@ -22,8 +23,7 @@ export default function Hero() {
             {siteConfig.tagline}
           </p>
           <p className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-brown/75">
-            Light up this Diwali with fresh, traditional sweets and snacks —
-            made with love in Kollam since {siteConfig.since}. Diwali Sweet Box 2026 is revealing soon!
+            {siteConfig.content.heroText}
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -35,7 +35,7 @@ export default function Hero() {
               <ArrowRight size={16} aria-hidden="true" />
             </Link>
             <a
-              href={buildWhatsAppLink()}
+              href={buildWhatsAppLink(undefined, siteConfig)}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3.5 text-sm font-semibold text-brown transition-all hover:bg-gold-soft hover:-translate-y-0.5 shadow-[0_8px_24px_-8px_rgba(201,154,61,0.5)]"
@@ -44,7 +44,7 @@ export default function Hero() {
               Order Now
             </a>
             <a
-              href={buildTelLink()}
+              href={buildTelLink(siteConfig)}
               className="inline-flex items-center gap-2 rounded-full border-2 border-brown px-6 py-3.5 text-sm font-semibold text-brown transition-all hover:bg-brown hover:text-cream-soft"
             >
               <Phone size={16} aria-hidden="true" />

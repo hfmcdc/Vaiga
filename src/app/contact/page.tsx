@@ -3,15 +3,17 @@ import { MapPin, Phone, Mail, MessageCircle, Clock } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
 import ContactForm from "@/components/contact/ContactForm";
-import { siteConfig } from "@/data/site";
+import { siteConfig as staticSite } from "@/data/site";
+import { getLiveSite } from "@/lib/siteStore";
 import { buildWhatsAppLink, buildTelLink, buildMailLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: `Get in touch with ${siteConfig.name} — call, WhatsApp, email, or send us a message.`,
+  description: `Get in touch with ${staticSite.name} — call, WhatsApp, email, or send us a message.`,
 };
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const siteConfig = await getLiveSite();
   return (
     <div className="bg-cream">
       <section className="mx-auto max-w-5xl px-5 sm:px-8 pt-14 pb-6 text-center">
@@ -41,14 +43,14 @@ export default function ContactPage() {
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone size={18} className="text-maroon shrink-0" aria-hidden="true" />
-                  <a href={buildTelLink()} className="hover:text-maroon">
+                  <a href={buildTelLink(siteConfig)} className="hover:text-maroon">
                     {siteConfig.phone}
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
                   <MessageCircle size={18} className="text-maroon shrink-0" aria-hidden="true" />
                   <a
-                    href={buildWhatsAppLink()}
+                    href={buildWhatsAppLink(undefined, siteConfig)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-maroon"
@@ -58,7 +60,7 @@ export default function ContactPage() {
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail size={18} className="text-maroon shrink-0" aria-hidden="true" />
-                  <a href={buildMailLink()} className="hover:text-maroon break-all">
+                  <a href={buildMailLink(undefined, siteConfig)} className="hover:text-maroon break-all">
                     {siteConfig.email}
                   </a>
                 </li>

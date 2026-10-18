@@ -6,6 +6,7 @@ import FeaturedProducts from "@/components/home/FeaturedProducts";
 import FestiveBanner from "@/components/home/FestiveBanner";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import Testimonials from "@/components/home/Testimonials";
+import { getSiteContent } from "@/lib/siteStore";
 import LeafDivider from "@/components/ui/LeafDivider";
 
 export const metadata: Metadata = {
@@ -14,7 +15,8 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-dynamic";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const { festiveOn } = await getSiteContent();
   return (
     <>
       <Hero />
@@ -23,9 +25,13 @@ export default function HomePage() {
       <LeafDivider toColor="var(--color-cream)" flip />
       <Categories />
       <FeaturedProducts />
-      <LeafDivider toColor="var(--color-maroon)" flip />
-      <FestiveBanner />
-      <LeafDivider toColor="var(--color-cream)" />
+      {festiveOn && (
+        <>
+          <LeafDivider toColor="var(--color-maroon)" flip />
+          <FestiveBanner />
+          <LeafDivider toColor="var(--color-cream)" />
+        </>
+      )}
       <WhyChooseUs />
       <Testimonials />
     </>

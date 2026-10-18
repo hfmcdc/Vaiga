@@ -4,13 +4,16 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { categories } from "@/data/categories";
 import type { Product } from "@/data/products";
+import type { SiteContent } from "@/data/siteContent";
+import SiteEditor from "@/components/admin/SiteEditor";
 
 const blank: Product = {
   slug: "", name: "", description: "", image: "", category: "sweets",
   price: "Contact us", available: true, featured: false,
 };
 
-export default function AdminPanel({ initial }: { initial: Product[] }) {
+export default function AdminPanel({ initial, site }: { initial: Product[]; site: SiteContent }) {
+  const [tab, setTab] = useState<"products" | "site">("products");
   const router = useRouter();
   const [items, setItems] = useState(initial);
   const [form, setForm] = useState<Product>(blank);
@@ -79,8 +82,18 @@ export default function AdminPanel({ initial }: { initial: Product[] }) {
             Log out
           </button>
         </div>
-        {msg && <p role="status" className="mt-4 rounded-xl bg-gold/30 px-4 py-2 text-sm font-medium">{msg}</p>}
+        <div className="mt-6 flex gap-2">
+          {(["products", "site"] as const).map((t) => (
+            <button key={t} onClick={() => { setTab(t); setMsg(""); }}
+              className={`rounded-full px-5 py-2 text-sm font-semibold ${tab === t ? "bg-maroon text-cream-soft" : "bg-cream-soft text-brown/75"}`}>
+              {t === "products" ? "Products" : "Website (text, contact, Diwali…)"}
+            </button>
+          ))}
+        </div>
+        {tab === "site" && <SiteEditor initial={site} />}
+        {msg && tab === "products" && <p role="status" className="mt-4 rounded-xl bg-gold/30 px-4 py-2 text-sm font-medium">{msg}</p>}
 
+        {tab === "products" && (
         <div className="mt-8 grid gap-8 lg:grid-cols-[380px_1fr]">
           <form onSubmit={save} className="h-fit space-y-4 rounded-3xl bg-cream-soft p-6 shadow-sm">
             <h2 className="font-display text-xl font-semibold">{editing ? `Edit: ${form.name}` : "Add new product"}</h2>
@@ -143,6 +156,7 @@ export default function AdminPanel({ initial }: { initial: Product[] }) {
             {items.length === 0 && <li className="text-brown/60">No products yet.</li>}
           </ul>
         </div>
+        )}
       </div>
     </div>
   );

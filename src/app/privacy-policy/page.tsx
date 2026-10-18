@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { siteConfig } from "@/data/site";
+import { siteConfig as staticSite } from "@/data/site";
+import { getLiveSite } from "@/lib/siteStore";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: `Privacy policy for ${siteConfig.name}.`,
+  description: `Privacy policy for ${staticSite.name}.`,
 };
 
-export default function PrivacyPolicyPage() {
+export default async function PrivacyPolicyPage() {
+  const siteConfig = await getLiveSite();
   return (
     <div className="bg-cream">
       <section className="mx-auto max-w-3xl px-5 sm:px-8 pt-14 pb-20 sm:pb-28">

@@ -204,3 +204,7 @@ Go to `/admin` → enter the **secret code** and **password** → add, edit, del
 2. Products are stored in `data/products.json`; uploaded photos in `data/uploads/`.
 3. **On Vercel:** Storage tab → Create → Blob → connect to the project (adds `BLOB_READ_WRITE_TOKEN`), then redeploy. Without that token the site uses local files, which Vercel does not allow saving.
 4. Back up the `data/` folder regularly.
+
+### Editing the whole website from /admin
+The **Website** tab edits: Diwali/festival strip + banner (with on/off switch), home page intro, phone, WhatsApp, email, social links, address, map, opening hours and customer reviews. Products have their own tab. Everything saves to storage (Vercel Blob in production), so no redeploy is needed.
+Still edited in code: About page story, page layout and images for categories.

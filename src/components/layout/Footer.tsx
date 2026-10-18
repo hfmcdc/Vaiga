@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { MessageCircle, Mail, Phone } from "lucide-react";
 import { InstagramIcon, FacebookIcon } from "@/components/ui/BrandIcons";
-import { siteConfig } from "@/data/site";
+import { getLiveSite } from "@/lib/siteStore";
 import { buildWhatsAppLink, buildMailLink, buildTelLink } from "@/lib/whatsapp";
 
-export default function Footer() {
+export default async function Footer() {
+  const siteConfig = await getLiveSite();
   return (
     <footer className="bg-maroon-dark text-cream-soft">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 py-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
@@ -42,13 +43,13 @@ export default function Footer() {
           </p>
           <ul className="space-y-3 text-cream-soft/85">
             <li>
-              <a href={buildTelLink()} className="flex items-center gap-2 hover:text-gold-soft transition-colors">
+              <a href={buildTelLink(siteConfig)} className="flex items-center gap-2 hover:text-gold-soft transition-colors">
                 <Phone size={16} aria-hidden="true" /> {siteConfig.phone}
               </a>
             </li>
             <li>
               <a
-                href={buildMailLink()}
+                href={buildMailLink(undefined, siteConfig)}
                 className="flex items-center gap-2 hover:text-gold-soft transition-colors break-all"
               >
                 <Mail size={16} aria-hidden="true" /> {siteConfig.email}
@@ -56,7 +57,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href={buildWhatsAppLink()}
+                href={buildWhatsAppLink(undefined, siteConfig)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-gold-soft transition-colors"
@@ -91,7 +92,7 @@ export default function Footer() {
               <FacebookIcon width={18} height={18} />
             </a>
             <a
-              href={buildWhatsAppLink()}
+              href={buildWhatsAppLink(undefined, siteConfig)}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Message Vaiga Sweets & Snacks on WhatsApp"

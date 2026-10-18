@@ -5,10 +5,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, MessageCircle } from "lucide-react";
-import { siteConfig } from "@/data/site";
+import { useSite } from "@/components/SiteProvider";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 
 export default function Navbar() {
+  const siteConfig = useSite();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
@@ -56,7 +57,7 @@ export default function Navbar() {
 
         <div className="hidden md:block">
           <Link
-            href={buildWhatsAppLink()}
+            href={buildWhatsAppLink(undefined, siteConfig)}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-maroon px-5 py-2.5 text-sm font-semibold text-cream-soft transition-all hover:bg-maroon-dark hover:-translate-y-0.5"
@@ -97,7 +98,7 @@ export default function Navbar() {
             ))}
           </ul>
           <Link
-            href={buildWhatsAppLink()}
+            href={buildWhatsAppLink(undefined, siteConfig)}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}

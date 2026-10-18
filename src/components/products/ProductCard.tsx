@@ -1,9 +1,13 @@
+"use client";
+
+import { useSite } from "@/components/SiteProvider";
 import Image from "next/image";
 import { MessageCircle } from "lucide-react";
 import type { Product } from "@/data/products";
 import { buildProductWhatsAppLink } from "@/lib/whatsapp";
 
 export default function ProductCard({ product }: { product: Product }) {
+  const siteConfig = useSite();
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-3xl bg-cream-soft shadow-[0_10px_30px_-14px_rgba(58,35,23,0.25)] transition-transform duration-300 hover:-translate-y-1.5">
       <div className="relative aspect-square overflow-hidden">
@@ -32,7 +36,7 @@ export default function ProductCard({ product }: { product: Product }) {
             {product.price}
           </span>
           <a
-            href={buildProductWhatsAppLink(product.name)}
+            href={buildProductWhatsAppLink(product.name, siteConfig)}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 rounded-full bg-maroon px-4 py-2 text-xs font-semibold text-cream-soft transition-colors hover:bg-maroon-dark"

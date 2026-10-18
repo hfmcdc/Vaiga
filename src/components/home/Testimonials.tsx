@@ -1,9 +1,11 @@
 import { Quote } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
-import { testimonials } from "@/data/testimonials";
+import { getSiteContent } from "@/lib/siteStore";
 
-export default function Testimonials() {
+export default async function Testimonials() {
+  const { testimonials } = await getSiteContent();
+  if (testimonials.length === 0) return null;
   return (
     <section className="bg-cream-soft">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 py-16 sm:py-24">
@@ -11,7 +13,7 @@ export default function Testimonials() {
           <SectionHeading
             eyebrow="Kind words"
             title="What Our Customers Say"
-            description="Placeholder testimonials shown for illustration — ready to be swapped for real customer feedback."
+            description="Kind words from the people we bake and fry for."
           />
         </Reveal>
 

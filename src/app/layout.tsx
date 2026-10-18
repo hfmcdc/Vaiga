@@ -9,6 +9,9 @@ import "@fontsource/work-sans/600.css";
 import "@fontsource/work-sans/700.css";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
+import { SiteProvider } from "@/components/SiteProvider";
+import { getLiveSite } from "@/lib/siteStore";
+import type { LiveSite } from "@/data/siteContent";
 import DiwaliStrip from "@/components/layout/DiwaliStrip";
 import Footer from "@/components/layout/Footer";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
@@ -49,7 +52,7 @@ export const metadata: Metadata = {
   },
 };
 
-const localBusinessJsonLd = {
+const buildJsonLd = (siteConfig: LiveSite) => ({
   "@context": "https://schema.org",
   "@type": "FoodEstablishment",
   name: siteConfig.name,
@@ -66,19 +69,22 @@ const localBusinessJsonLd = {
     addressCountry: siteConfig.address.country,
   },
   sameAs: [siteConfig.social.instagram, siteConfig.social.facebook],
-};
+});
 
-export default function RootLayout({
+export const dynamic = "force-dynamic";
+
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const live = await getLiveSite();
   return (
     <html lang="en" className="h-full">
       <body className="min-h-full flex flex-col font-sans bg-cream text-brown antialiased">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildJsonLd(live)) }}
         />
         <a
           href="#main-content"
@@ -86,6 +92,7 @@ export default function RootLayout({
         >
           Skip to main content
         </a>
+        <SiteProvider value={live}>
         <DiwaliStrip />
         <Navbar />
         <main id="main-content" className="flex-1">
@@ -93,6 +100,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <WhatsAppFloat />
+        </SiteProvider>
       </body>
     </html>
   );

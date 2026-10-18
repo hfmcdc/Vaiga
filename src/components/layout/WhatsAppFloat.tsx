@@ -1,10 +1,12 @@
+import { getLiveSite } from "@/lib/siteStore";
 import { MessageCircle } from "lucide-react";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 
-export default function WhatsAppFloat() {
+export default async function WhatsAppFloat() {
+  const siteConfig = await getLiveSite();
   return (
     <a
-      href={buildWhatsAppLink()}
+      href={buildWhatsAppLink(undefined, siteConfig)}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Order via WhatsApp"
