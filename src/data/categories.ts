@@ -1,5 +1,5 @@
 export type Category = {
-  slug: "sweets" | "kerala-snacks" | "banana-specials" | "festive-specials";
+  slug: "sweets" | "kerala-snacks" | "festive-specials";
   name: string;
   emoji: string;
   description: string;
@@ -20,13 +20,6 @@ export const categories: Category[] = [
     emoji: "🥥",
     description: "Authentic Kerala-style snacks — crunchy, savoury and full of flavour.",
     image: "/images/categories/kerala-snacks.svg",
-  },
-  {
-    slug: "banana-specials",
-    name: "Banana Specials",
-    emoji: "🍌",
-    description: "Banana chips and traditional banana-based snacks, a Kerala favourite.",
-    image: "/images/categories/banana-specials.svg",
   },
   {
     slug: "festive-specials",

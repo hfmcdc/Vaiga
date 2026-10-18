@@ -7,7 +7,7 @@ import ProductFilter from "@/components/products/ProductFilter";
 export const metadata: Metadata = {
   title: "Products",
   description:
-    "Browse traditional Kerala sweets, snacks, banana specials and festive specials from Vaiga Sweets & Snacks.",
+    "Browse traditional Kerala sweets, snacks and festive specials from Vaiga Sweets & Snacks.",
 };
 
 export const dynamic = "force-dynamic";

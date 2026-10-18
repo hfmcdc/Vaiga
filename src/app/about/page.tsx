@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { HeartHandshake, Leaf, Sparkles, PartyPopper } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
@@ -23,7 +22,8 @@ export default async function AboutPage() {
   const siteConfig = await getLiveSite();
   return (
     <div className="bg-night">
-      <section className="mx-auto max-w-7xl px-5 sm:px-8 pt-14 pb-16 sm:pb-24 grid lg:grid-cols-2 gap-12 items-center">
+      <section className="mx-auto max-w-7xl px-5 sm:px-8 pt-14 pb-16 sm:pb-24">
+        <div className="max-w-3xl">
         <Reveal>
           <p className="font-display italic text-lg text-gold mb-2">Our story</p>
           <h1 className="font-display text-4xl sm:text-5xl font-semibold leading-tight text-ink">
@@ -61,28 +61,8 @@ export default async function AboutPage() {
             ))}
           </div>
         </Reveal>
+        </div>
 
-        <Reveal delayMs={120}>
-          <div className="relative mx-auto max-w-md">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] shadow-[0_24px_50px_-16px_rgba(58,35,23,0.35)]">
-              <Image
-                src="/images/about/about-story.svg"
-                alt="Vaiga Sweets & Snacks — since 2020"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 90vw, 40vw"
-              />
-            </div>
-            <div className="absolute -bottom-6 -right-4 rounded-2xl bg-gold px-6 py-4 shadow-lg">
-              <p className="font-display text-3xl font-bold text-brown leading-none">
-                {siteConfig.since}
-              </p>
-              <p className="text-xs uppercase tracking-[0.15em] text-brown/80 mt-1">
-                And counting
-              </p>
-            </div>
-          </div>
-        </Reveal>
       </section>
 
       <section className="bg-night-soft">

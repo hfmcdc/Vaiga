@@ -62,7 +62,7 @@ Edit `src/data/products.ts`. Each product is a plain object:
   name: "Banana Chips",
   description: "...",
   image: "/images/products/banana-chips.svg",
-  category: "banana-specials", // must match a slug in src/data/categories.ts
+  category: "kerala-snacks", // must match a slug in src/data/categories.ts
   price: "Contact us",         // keep as a friendly placeholder unless you want real prices shown
   available: true,             // set false to show "Currently unavailable"
   featured: true,              // true = shows on the homepage featured grid

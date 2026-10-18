@@ -4,6 +4,7 @@ import crypto from "crypto";
 import { put, list } from "@vercel/blob";
 import seed from "../../data/products.json";
 import type { Product } from "@/data/products";
+import { categories } from "@/data/categories";
 
 // Storage: Vercel Blob when BLOB_READ_WRITE_TOKEN exists (production),
 // otherwise local JSON files in /data (your own PC).
@@ -44,7 +45,11 @@ export async function writeStore(name: string, data: unknown) {
   await fs.rename(file + ".tmp", file);
 }
 
-export const getProducts = () => readStore<Product[]>("products", () => seed as unknown as Product[]);
+export async function getProducts(): Promise<Product[]> {
+  const list = await readStore<Product[]>("products", () => seed as unknown as Product[]);
+  // products saved under a removed category move to Kerala Snacks
+  return list.map((p) => (categories.some((c) => c.slug === p.category) ? p : { ...p, category: "kerala-snacks" as const }));
+}
 export const saveProducts = (list: Product[]) => writeStore("products", list);
 
 export async function saveImage(buf: Buffer, ext: string, contentType: string) {

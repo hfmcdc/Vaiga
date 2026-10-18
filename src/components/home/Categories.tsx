@@ -17,7 +17,7 @@ export default function Categories() {
           />
         </Reveal>
 
-        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {categories.map((cat, i) => (
             <Reveal key={cat.slug} delayMs={i * 90}>
               <Link
