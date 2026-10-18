@@ -28,7 +28,7 @@ export default function SectionHeading({
       )}
       <h2
         className={`font-display text-3xl sm:text-4xl md:text-[2.75rem] leading-tight font-semibold ${
-          light ? "text-cream-soft" : "text-brown"
+          light ? "text-cream-soft" : "text-ink"
         }`}
       >
         {title}
@@ -36,7 +36,7 @@ export default function SectionHeading({
       {description && (
         <p
           className={`mt-4 text-base sm:text-lg leading-relaxed ${
-            light ? "text-cream-soft/85" : "text-brown/75"
+            light ? "text-cream-soft/85" : "text-ink/75"
           }`}
         >
           {description}

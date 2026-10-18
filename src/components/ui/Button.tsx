@@ -26,7 +26,7 @@ const variants: Record<NonNullable<BaseProps["variant"]>, string> = {
   secondary:
     "bg-gold text-brown hover:bg-gold-soft shadow-[0_8px_24px_-8px_rgba(201,154,61,0.5)]",
   ghost:
-    "bg-transparent text-cream-soft border border-cream-soft/50 hover:bg-cream-soft/10",
+    "bg-transparent text-cream-soft border border-cream-soft/50 hover:bg-night-soft/10",
 };
 
 const base =

@@ -50,7 +50,7 @@ export default function ProductFilter({ products }: { products: Product[] }) {
             className={`rounded-full px-5 py-2.5 text-sm font-semibold transition-colors ${
               active === tab.slug
                 ? "bg-maroon text-cream-soft"
-                : "bg-cream-soft text-brown/75 hover:bg-maroon/10"
+                : "bg-night-soft text-ink/75 hover:bg-maroon/10"
             }`}
           >
             {tab.name}
@@ -59,7 +59,7 @@ export default function ProductFilter({ products }: { products: Product[] }) {
       </div>
 
       {filtered.length === 0 ? (
-        <p className="mt-16 text-center text-brown/60">
+        <p className="mt-16 text-center text-ink/60">
           No products in this category yet — check back soon.
         </p>
       ) : (

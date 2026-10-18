@@ -3,7 +3,7 @@
 import { useState } from "react";
 import type { SiteContent } from "@/data/siteContent";
 
-const box = "mt-1 w-full rounded-xl border border-brown/20 bg-white px-3 py-2.5";
+const box = "mt-1 w-full rounded-xl border border-ink/20 bg-night px-3 py-2.5";
 
 export default function SiteEditor({ initial }: { initial: SiteContent }) {
   const [c, setC] = useState<SiteContent>(initial);
@@ -22,7 +22,7 @@ export default function SiteEditor({ initial }: { initial: SiteContent }) {
       <label className="block text-sm font-medium">
         {label}
         {opts.area ? <textarea rows={3} {...props} /> : <input {...props} />}
-        {opts.hint && <span className="mt-1 block text-xs font-normal text-brown/60">{opts.hint}</span>}
+        {opts.hint && <span className="mt-1 block text-xs font-normal text-ink/60">{opts.hint}</span>}
       </label>
     );
   }
@@ -38,7 +38,7 @@ export default function SiteEditor({ initial }: { initial: SiteContent }) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  const card = "space-y-4 rounded-3xl bg-cream-soft p-6 shadow-sm";
+  const card = "space-y-4 rounded-3xl bg-night-soft p-6 shadow-sm";
 
   return (
     <form onSubmit={save} className="mt-8 grid gap-6 lg:grid-cols-2">
@@ -86,26 +86,26 @@ export default function SiteEditor({ initial }: { initial: SiteContent }) {
             <div key={i} className="flex gap-2">
               <input aria-label="Days" placeholder="Monday – Saturday" value={h.day} className={box} onChange={(e) => set("hours", c.hours.map((x, j) => (j === i ? { ...x, day: e.target.value } : x)))} />
               <input aria-label="Time" placeholder="9:00 AM – 8:00 PM" value={h.time} className={box} onChange={(e) => set("hours", c.hours.map((x, j) => (j === i ? { ...x, time: e.target.value } : x)))} />
-              <button type="button" onClick={() => set("hours", c.hours.filter((_, j) => j !== i))} className="mt-1 rounded-xl px-3 text-maroon-dark" aria-label="Remove row">✕</button>
+              <button type="button" onClick={() => set("hours", c.hours.filter((_, j) => j !== i))} className="mt-1 rounded-xl px-3 text-rose-300" aria-label="Remove row">✕</button>
             </div>
           ))}
-          <button type="button" onClick={() => set("hours", [...c.hours, { day: "", time: "" }])} className="text-sm font-semibold text-maroon underline">+ Add row</button>
+          <button type="button" onClick={() => set("hours", [...c.hours, { day: "", time: "" }])} className="text-sm font-semibold text-gold underline">+ Add row</button>
         </div>
       </section>
 
       <section className={card}>
         <h2 className="font-display text-xl font-semibold">Customer reviews</h2>
-        <p className="text-xs text-brown/60">Only add real feedback from your customers. Remove all to hide the section.</p>
+        <p className="text-xs text-ink/60">Only add real feedback from your customers. Remove all to hide the section.</p>
         {c.testimonials.map((t, i) => (
-          <div key={i} className="space-y-2 rounded-xl border border-brown/10 p-3">
+          <div key={i} className="space-y-2 rounded-xl border border-ink/10 p-3">
             <textarea aria-label="Review" rows={2} maxLength={300} placeholder="What the customer said" value={t.quote} className={box} onChange={(e) => set("testimonials", c.testimonials.map((x, j) => (j === i ? { ...x, quote: e.target.value } : x)))} />
             <div className="flex gap-2">
               <input aria-label="Name" placeholder="Name" value={t.name} className={box} onChange={(e) => set("testimonials", c.testimonials.map((x, j) => (j === i ? { ...x, name: e.target.value } : x)))} />
-              <button type="button" onClick={() => set("testimonials", c.testimonials.filter((_, j) => j !== i))} className="mt-1 rounded-xl px-3 text-sm font-semibold text-maroon-dark">Remove</button>
+              <button type="button" onClick={() => set("testimonials", c.testimonials.filter((_, j) => j !== i))} className="mt-1 rounded-xl px-3 text-sm font-semibold text-rose-300">Remove</button>
             </div>
           </div>
         ))}
-        <button type="button" onClick={() => set("testimonials", [...c.testimonials, { quote: "", name: "" }])} className="text-sm font-semibold text-maroon underline">+ Add review</button>
+        <button type="button" onClick={() => set("testimonials", [...c.testimonials, { quote: "", name: "" }])} className="text-sm font-semibold text-gold underline">+ Add review</button>
       </section>
 
       <div className="lg:col-span-2">

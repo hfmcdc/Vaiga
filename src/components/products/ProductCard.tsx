@@ -9,7 +9,7 @@ import { buildProductWhatsAppLink } from "@/lib/whatsapp";
 export default function ProductCard({ product }: { product: Product }) {
   const siteConfig = useSite();
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-3xl bg-cream-soft shadow-[0_10px_30px_-14px_rgba(58,35,23,0.25)] transition-transform duration-300 hover:-translate-y-1.5">
+    <article className="group flex h-full flex-col overflow-hidden rounded-3xl bg-night-soft shadow-[0_10px_30px_-14px_rgba(58,35,23,0.25)] transition-transform duration-300 hover:-translate-y-1.5">
       <div className="relative aspect-square overflow-hidden">
         <Image
           src={product.image}
@@ -25,14 +25,14 @@ export default function ProductCard({ product }: { product: Product }) {
         )}
       </div>
       <div className="flex flex-1 flex-col p-5">
-        <h3 className="font-display text-lg font-semibold text-brown">
+        <h3 className="font-display text-lg font-semibold text-ink">
           {product.name}
         </h3>
-        <p className="mt-1.5 text-sm leading-relaxed text-brown/70 flex-1">
+        <p className="mt-1.5 text-sm leading-relaxed text-ink/70 flex-1">
           {product.description}
         </p>
         <div className="mt-4 flex items-center justify-between gap-3">
-          <span className="text-sm font-semibold text-maroon">
+          <span className="text-sm font-semibold text-gold">
             {product.price}
           </span>
           <a

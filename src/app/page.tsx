@@ -20,16 +20,16 @@ export default async function HomePage() {
   return (
     <>
       <Hero />
-      <LeafDivider toColor="var(--color-cream-soft)" />
+      <LeafDivider toColor="var(--color-night-soft)" />
       <BrandIntro />
-      <LeafDivider toColor="var(--color-cream)" flip />
+      <LeafDivider toColor="var(--color-night)" flip />
       <Categories />
       <FeaturedProducts />
       {festiveOn && (
         <>
           <LeafDivider toColor="var(--color-maroon-dark)" flip />
           <FestiveBanner />
-          <LeafDivider toColor="var(--color-cream)" />
+          <LeafDivider toColor="var(--color-night)" />
         </>
       )}
       <WhyChooseUs />

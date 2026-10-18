@@ -11,7 +11,7 @@ type LeafDividerProps = {
  * used in place of plain straight section boundaries.
  */
 export default function LeafDivider({
-  toColor = "var(--color-cream)",
+  toColor = "var(--color-night)",
   flip = false,
   className = "",
 }: LeafDividerProps) {

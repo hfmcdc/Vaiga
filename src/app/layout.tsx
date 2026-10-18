@@ -81,7 +81,7 @@ export default async function RootLayout({
   const live = await getLiveSite();
   return (
     <html lang="en" className="h-full">
-      <body className="min-h-full flex flex-col font-sans bg-cream text-brown antialiased">
+      <body className="min-h-full flex flex-col font-sans bg-night text-ink antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(buildJsonLd(live)) }}

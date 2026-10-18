@@ -78,7 +78,7 @@ export default async function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Vaiga Sweets & Snacks on Instagram"
-              className="rounded-full border border-cream-soft/30 p-2.5 hover:bg-cream-soft/10 transition-colors"
+              className="rounded-full border border-cream-soft/30 p-2.5 hover:bg-night-soft/10 transition-colors"
             >
               <InstagramIcon width={18} height={18} />
             </a>
@@ -87,7 +87,7 @@ export default async function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Vaiga Sweets & Snacks on Facebook"
-              className="rounded-full border border-cream-soft/30 p-2.5 hover:bg-cream-soft/10 transition-colors"
+              className="rounded-full border border-cream-soft/30 p-2.5 hover:bg-night-soft/10 transition-colors"
             >
               <FacebookIcon width={18} height={18} />
             </a>
@@ -96,7 +96,7 @@ export default async function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Message Vaiga Sweets & Snacks on WhatsApp"
-              className="rounded-full border border-cream-soft/30 p-2.5 hover:bg-cream-soft/10 transition-colors"
+              className="rounded-full border border-cream-soft/30 p-2.5 hover:bg-night-soft/10 transition-colors"
             >
               <MessageCircle size={18} />
             </a>

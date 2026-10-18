@@ -33,17 +33,17 @@ export default function ContactForm() {
     return (
       <div className="rounded-3xl bg-green/10 border border-green/30 p-8 text-center">
         <CheckCircle2 className="mx-auto text-green" size={40} aria-hidden="true" />
-        <h3 className="mt-3 font-display text-xl font-semibold text-brown">
+        <h3 className="mt-3 font-display text-xl font-semibold text-ink">
           Message sent
         </h3>
-        <p className="mt-2 text-sm text-brown/70">
+        <p className="mt-2 text-sm text-ink/70">
           Thanks for reaching out — we&apos;ll get back to you shortly. For
           faster replies, message us directly on WhatsApp.
         </p>
         <button
           type="button"
           onClick={() => setStatus("idle")}
-          className="mt-5 text-sm font-semibold text-maroon underline underline-offset-4"
+          className="mt-5 text-sm font-semibold text-gold underline underline-offset-4"
         >
           Send another message
         </button>
@@ -54,7 +54,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-5" noValidate>
       <div>
-        <label htmlFor="name" className="block text-sm font-semibold text-brown mb-1.5">
+        <label htmlFor="name" className="block text-sm font-semibold text-ink mb-1.5">
           Name
         </label>
         <input
@@ -63,13 +63,13 @@ export default function ContactForm() {
           type="text"
           required
           autoComplete="name"
-          className="w-full rounded-xl border border-brown/15 bg-cream-soft px-4 py-3 text-brown placeholder:text-brown/40 focus:border-maroon"
+          className="w-full rounded-xl border border-ink/15 bg-night-soft px-4 py-3 text-ink placeholder:text-ink/40 focus:border-gold"
           placeholder="Your full name"
         />
       </div>
 
       <div>
-        <label htmlFor="phone" className="block text-sm font-semibold text-brown mb-1.5">
+        <label htmlFor="phone" className="block text-sm font-semibold text-ink mb-1.5">
           Phone
         </label>
         <input
@@ -78,13 +78,13 @@ export default function ContactForm() {
           type="tel"
           required
           autoComplete="tel"
-          className="w-full rounded-xl border border-brown/15 bg-cream-soft px-4 py-3 text-brown placeholder:text-brown/40 focus:border-maroon"
+          className="w-full rounded-xl border border-ink/15 bg-night-soft px-4 py-3 text-ink placeholder:text-ink/40 focus:border-gold"
           placeholder="Your phone number"
         />
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-semibold text-brown mb-1.5">
+        <label htmlFor="email" className="block text-sm font-semibold text-ink mb-1.5">
           Email
         </label>
         <input
@@ -93,13 +93,13 @@ export default function ContactForm() {
           type="email"
           required
           autoComplete="email"
-          className="w-full rounded-xl border border-brown/15 bg-cream-soft px-4 py-3 text-brown placeholder:text-brown/40 focus:border-maroon"
+          className="w-full rounded-xl border border-ink/15 bg-night-soft px-4 py-3 text-ink placeholder:text-ink/40 focus:border-gold"
           placeholder="you@example.com"
         />
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-semibold text-brown mb-1.5">
+        <label htmlFor="message" className="block text-sm font-semibold text-ink mb-1.5">
           Message
         </label>
         <textarea
@@ -107,7 +107,7 @@ export default function ContactForm() {
           name="message"
           required
           rows={5}
-          className="w-full rounded-xl border border-brown/15 bg-cream-soft px-4 py-3 text-brown placeholder:text-brown/40 focus:border-maroon"
+          className="w-full rounded-xl border border-ink/15 bg-night-soft px-4 py-3 text-ink placeholder:text-ink/40 focus:border-gold"
           placeholder="Tell us what you'd like to order or ask"
         />
       </div>

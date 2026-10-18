@@ -9,7 +9,7 @@ export default async function FeaturedProducts() {
   const featured = await getFeaturedProducts();
 
   return (
-    <section className="bg-cream-soft">
+    <section className="bg-night-soft">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 py-16 sm:py-24">
         <Reveal>
           <SectionHeading
@@ -30,7 +30,7 @@ export default async function FeaturedProducts() {
         <div className="mt-12 text-center">
           <Link
             href="/products"
-            className="inline-flex items-center gap-2 rounded-full border-2 border-maroon px-6 py-3 text-sm font-semibold text-maroon transition-all hover:bg-maroon hover:text-cream-soft"
+            className="inline-flex items-center gap-2 rounded-full border-2 border-gold px-6 py-3 text-sm font-semibold text-gold transition-all hover:bg-gold hover:text-brown"
           >
             View All Products
             <ArrowRight size={16} aria-hidden="true" />

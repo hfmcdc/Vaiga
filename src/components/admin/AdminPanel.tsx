@@ -71,21 +71,21 @@ export default function AdminPanel({ initial, site }: { initial: Product[]; site
     router.refresh();
   }
 
-  const input = "mt-1 w-full rounded-xl border border-brown/20 bg-white px-3 py-2.5";
+  const input = "mt-1 w-full rounded-xl border border-ink/20 bg-night px-3 py-2.5";
 
   return (
-    <div className="bg-cream">
+    <div className="bg-night">
       <div className="mx-auto max-w-6xl px-5 py-10 sm:px-8">
         <div className="flex items-center justify-between gap-4">
           <h1 className="font-display text-3xl font-semibold">Manage Products</h1>
-          <button onClick={logout} className="rounded-full border-2 border-brown px-5 py-2 text-sm font-semibold hover:bg-brown hover:text-cream-soft">
+          <button onClick={logout} className="rounded-full border-2 border-ink px-5 py-2 text-sm font-semibold hover:bg-ink hover:text-night">
             Log out
           </button>
         </div>
         <div className="mt-6 flex gap-2">
           {(["products", "site"] as const).map((t) => (
             <button key={t} onClick={() => { setTab(t); setMsg(""); }}
-              className={`rounded-full px-5 py-2 text-sm font-semibold ${tab === t ? "bg-maroon text-cream-soft" : "bg-cream-soft text-brown/75"}`}>
+              className={`rounded-full px-5 py-2 text-sm font-semibold ${tab === t ? "bg-maroon text-cream-soft" : "bg-night-soft text-ink/75"}`}>
               {t === "products" ? "Products" : "Website (text, contact, Diwali…)"}
             </button>
           ))}
@@ -95,7 +95,7 @@ export default function AdminPanel({ initial, site }: { initial: Product[]; site
 
         {tab === "products" && (
         <div className="mt-8 grid gap-8 lg:grid-cols-[380px_1fr]">
-          <form onSubmit={save} className="h-fit space-y-4 rounded-3xl bg-cream-soft p-6 shadow-sm">
+          <form onSubmit={save} className="h-fit space-y-4 rounded-3xl bg-night-soft p-6 shadow-sm">
             <h2 className="font-display text-xl font-semibold">{editing ? `Edit: ${form.name}` : "Add new product"}</h2>
             <label className="block text-sm font-medium">Name
               <input required maxLength={80} value={form.name} onChange={(e) => set("name", e.target.value)} className={input} />
@@ -130,7 +130,7 @@ export default function AdminPanel({ initial, site }: { initial: Product[]; site
                 {busy ? "Saving…" : editing ? "Save changes" : "Add product"}
               </button>
               {editing && (
-                <button type="button" onClick={() => { setForm(blank); setEditing(false); }} className="rounded-full border-2 border-brown/30 px-5 py-3 font-semibold">
+                <button type="button" onClick={() => { setForm(blank); setEditing(false); }} className="rounded-full border-2 border-ink/30 px-5 py-3 font-semibold">
                   Cancel
                 </button>
               )}
@@ -139,21 +139,21 @@ export default function AdminPanel({ initial, site }: { initial: Product[]; site
 
           <ul className="space-y-3">
             {items.map((p) => (
-              <li key={p.slug} className="flex items-center gap-4 rounded-2xl bg-cream-soft p-3 shadow-sm">
+              <li key={p.slug} className="flex items-center gap-4 rounded-2xl bg-night-soft p-3 shadow-sm">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={p.image} alt="" className="h-16 w-16 shrink-0 rounded-xl object-cover" />
                 <div className="min-w-0 flex-1">
                   <p className="truncate font-semibold">{p.name}</p>
-                  <p className="truncate text-sm text-brown/65">
+                  <p className="truncate text-sm text-ink/65">
                     {categories.find((c) => c.slug === p.category)?.name} · {p.price}
                     {p.featured && " · ★ featured"}{!p.available && " · unavailable"}
                   </p>
                 </div>
-                <button onClick={() => { setForm(p); setEditing(true); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="rounded-full bg-gold px-4 py-2 text-sm font-semibold">Edit</button>
+                <button onClick={() => { setForm(p); setEditing(true); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="rounded-full bg-gold px-4 py-2 text-sm font-semibold text-brown">Edit</button>
                 <button onClick={() => del(p)} className="rounded-full bg-maroon px-4 py-2 text-sm font-semibold text-cream-soft">Delete</button>
               </li>
             ))}
-            {items.length === 0 && <li className="text-brown/60">No products yet.</li>}
+            {items.length === 0 && <li className="text-ink/60">No products yet.</li>}
           </ul>
         </div>
         )}

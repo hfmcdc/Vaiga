@@ -25,8 +25,8 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-cream-soft/95 backdrop-blur shadow-[0_4px_20px_-8px_rgba(58,35,23,0.25)]"
-          : "bg-cream-soft/70 backdrop-blur-sm"
+          ? "bg-night-soft/95 backdrop-blur shadow-[0_4px_20px_-8px_rgba(58,35,23,0.25)]"
+          : "bg-night-soft/70 backdrop-blur-sm"
       }`}
     >
       <nav
@@ -35,18 +35,18 @@ export default function Navbar() {
       >
         <Link
           href="/"
-          className="flex items-baseline gap-2 font-display text-xl sm:text-2xl font-semibold text-maroon"
+          className="flex items-baseline gap-2 font-display text-xl sm:text-2xl font-semibold text-gold"
         >
           <Image src="/images/logo-small.png" alt="Vaiga Sweets & Snacks" width={256} height={170} priority className="h-12 w-auto sm:h-14" />
         </Link>
 
-        <ul className="hidden md:flex items-center gap-8 font-medium text-brown/85">
+        <ul className="hidden md:flex items-center gap-8 font-medium text-ink/85">
           {siteConfig.nav.map((item) => (
             <li key={item.href}>
               <Link
                 href={item.href}
-                className={`transition-colors hover:text-maroon ${
-                  pathname === item.href ? "text-maroon" : ""
+                className={`transition-colors hover:text-gold ${
+                  pathname === item.href ? "text-gold" : ""
                 }`}
               >
                 {item.label}
@@ -71,7 +71,7 @@ export default function Navbar() {
           type="button"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
-          className="md:hidden inline-flex items-center justify-center rounded-full p-2 text-brown hover:bg-brown/5"
+          className="md:hidden inline-flex items-center justify-center rounded-full p-2 text-ink hover:bg-ink/10"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -79,7 +79,7 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="md:hidden border-t border-brown/10 bg-cream-soft px-5 pb-6 pt-2">
+        <div className="md:hidden border-t border-ink/10 bg-night-soft px-5 pb-6 pt-2">
           <ul className="flex flex-col gap-1">
             {siteConfig.nav.map((item) => (
               <li key={item.href}>
@@ -88,8 +88,8 @@ export default function Navbar() {
                   onClick={() => setOpen(false)}
                   className={`block rounded-lg px-3 py-3 text-base font-medium ${
                     pathname === item.href
-                      ? "bg-maroon/10 text-maroon"
-                      : "text-brown/85 hover:bg-brown/5"
+                      ? "bg-maroon/10 text-gold"
+                      : "text-ink/85 hover:bg-ink/10"
                   }`}
                 >
                   {item.label}

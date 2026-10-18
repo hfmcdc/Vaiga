@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 export default async function PrivacyPolicyPage() {
   const siteConfig = await getLiveSite();
   return (
-    <div className="bg-cream">
+    <div className="bg-night">
       <section className="mx-auto max-w-3xl px-5 sm:px-8 pt-14 pb-20 sm:pb-28">
         <SectionHeading eyebrow="Legal" title="Privacy Policy" align="left" />
 
-        <div className="mt-8 space-y-6 text-sm sm:text-base leading-relaxed text-brown/80">
+        <div className="mt-8 space-y-6 text-sm sm:text-base leading-relaxed text-ink/80">
           <p>
             This is placeholder privacy policy content for {siteConfig.name}.
             Replace it with a policy reviewed for your business before
@@ -23,7 +23,7 @@ export default async function PrivacyPolicyPage() {
           </p>
 
           <div>
-            <h2 className="font-display text-xl font-semibold text-brown mb-2">
+            <h2 className="font-display text-xl font-semibold text-ink mb-2">
               Information we collect
             </h2>
             <p>
@@ -34,7 +34,7 @@ export default async function PrivacyPolicyPage() {
           </div>
 
           <div>
-            <h2 className="font-display text-xl font-semibold text-brown mb-2">
+            <h2 className="font-display text-xl font-semibold text-ink mb-2">
               How we use it
             </h2>
             <p>
@@ -45,7 +45,7 @@ export default async function PrivacyPolicyPage() {
           </div>
 
           <div>
-            <h2 className="font-display text-xl font-semibold text-brown mb-2">
+            <h2 className="font-display text-xl font-semibold text-ink mb-2">
               WhatsApp &amp; phone contact
             </h2>
             <p>
@@ -56,12 +56,12 @@ export default async function PrivacyPolicyPage() {
           </div>
 
           <div>
-            <h2 className="font-display text-xl font-semibold text-brown mb-2">
+            <h2 className="font-display text-xl font-semibold text-ink mb-2">
               Contact us
             </h2>
             <p>
               Questions about this policy can be sent to{" "}
-              <a href={`mailto:${siteConfig.email}`} className="text-maroon underline underline-offset-4">
+              <a href={`mailto:${siteConfig.email}`} className="text-gold underline underline-offset-4">
                 {siteConfig.email}
               </a>
               .

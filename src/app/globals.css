@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --color-maroon: #7f1426;
+  --color-maroon: #a31d35;
   --color-maroon-dark: #3f070d;
+  --color-night: #1f0508;
+  --color-night-soft: #2e0a10;
+  --color-ink: #fbeccb;
   --color-cream: #fff4dc;
   --color-cream-soft: #fffaf0;
   --color-gold: #e8b64c;
@@ -14,6 +17,9 @@
 @theme inline {
   --color-maroon: var(--color-maroon);
   --color-maroon-dark: var(--color-maroon-dark);
+  --color-night: var(--color-night);
+  --color-night-soft: var(--color-night-soft);
+  --color-ink: var(--color-ink);
   --color-cream: var(--color-cream);
   --color-cream-soft: var(--color-cream-soft);
   --color-gold: var(--color-gold);
@@ -52,8 +58,8 @@ html {
 }
 
 body {
-  background: var(--color-cream);
-  color: var(--color-brown);
+  background: var(--color-night);
+  color: var(--color-ink);
 }
 
 /* Respect reduced-motion preferences everywhere. */

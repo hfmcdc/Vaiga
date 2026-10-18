@@ -4,29 +4,29 @@ import { siteConfig } from "@/data/site";
 
 export default function BrandIntro() {
   return (
-    <section className="bg-cream-soft">
+    <section className="bg-night-soft">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 py-16 sm:py-24 grid lg:grid-cols-2 gap-12 items-center">
         <Reveal>
           <p className="font-display italic text-lg text-gold mb-2">Our story</p>
-          <h2 className="font-display text-3xl sm:text-4xl font-semibold leading-tight text-brown">
+          <h2 className="font-display text-3xl sm:text-4xl font-semibold leading-tight text-ink">
             A Taste of Tradition Since {siteConfig.since}
           </h2>
-          <p className="mt-5 text-base sm:text-lg leading-relaxed text-brown/75">
+          <p className="mt-5 text-base sm:text-lg leading-relaxed text-ink/75">
             {siteConfig.name} was started in {siteConfig.since} with a simple
             focus: traditional taste, honest ingredients and sweets and
             snacks made fresh, the way they would be in a Kerala home
             kitchen. Every batch is prepared with care, so it reaches you
             tasting the way it should.
           </p>
-          <p className="mt-4 text-base sm:text-lg leading-relaxed text-brown/75">
+          <p className="mt-4 text-base sm:text-lg leading-relaxed text-ink/75">
             From festive favourites to everyday snacking, we hold on to
             recipes and methods that have been trusted for generations.
           </p>
           <div className="mt-7 inline-flex items-center gap-3 rounded-2xl border border-gold/40 bg-gold/10 px-5 py-3">
-            <span className="font-display text-2xl font-semibold text-maroon">
+            <span className="font-display text-2xl font-semibold text-gold">
               {siteConfig.since}
             </span>
-            <span className="text-sm text-brown/70 leading-tight">
+            <span className="text-sm text-ink/70 leading-tight">
               The year Vaiga
               <br />
               Sweets &amp; Snacks began

@@ -28,11 +28,11 @@ export default function AdminLogin() {
   }
 
   const input =
-    "mt-1.5 w-full rounded-xl border border-brown/20 bg-white px-4 py-3 text-brown focus:border-maroon";
+    "mt-1.5 w-full rounded-xl border border-ink/20 bg-night px-4 py-3 text-ink focus:border-gold";
 
   return (
-    <div className="bg-cream px-5 py-16 sm:py-24">
-      <form onSubmit={submit} className="mx-auto max-w-sm rounded-3xl bg-cream-soft p-8 shadow-[0_20px_50px_-20px_rgba(31,20,9,0.35)]">
+    <div className="bg-night px-5 py-16 sm:py-24">
+      <form onSubmit={submit} className="mx-auto max-w-sm rounded-3xl bg-night-soft p-8 shadow-[0_20px_50px_-20px_rgba(31,20,9,0.35)]">
         <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-gold text-brown">
           <Lock size={22} aria-hidden="true" />
         </div>
@@ -45,7 +45,7 @@ export default function AdminLogin() {
           Password
           <input type="password" autoComplete="current-password" required value={password} onChange={(e) => setPassword(e.target.value)} className={input} />
         </label>
-        {error && <p role="alert" className="mt-4 text-sm font-medium text-maroon-dark">{error}</p>}
+        {error && <p role="alert" className="mt-4 text-sm font-medium text-rose-300">{error}</p>}
         <button disabled={busy} className="mt-6 w-full rounded-full bg-maroon px-6 py-3 font-semibold text-cream-soft hover:bg-maroon-dark disabled:opacity-60">
           {busy ? "Checking…" : "Enter"}
         </button>

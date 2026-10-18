@@ -38,7 +38,7 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-cream">
+    <section className="bg-night">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 py-16 sm:py-24">
         <Reveal>
           <SectionHeading eyebrow="Why Vaiga" title="Why Choose Vaiga?" />
@@ -47,14 +47,14 @@ export default function WhyChooseUs() {
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map(({ icon: Icon, title, description }, i) => (
             <Reveal key={title} delayMs={i * 70}>
-              <div className="h-full rounded-3xl bg-cream-soft p-7 shadow-[0_10px_30px_-16px_rgba(58,35,23,0.2)]">
-                <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-maroon/10 text-maroon">
+              <div className="h-full rounded-3xl bg-night-soft p-7 shadow-[0_10px_30px_-16px_rgba(58,35,23,0.2)]">
+                <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-maroon/10 text-gold">
                   <Icon size={22} aria-hidden="true" />
                 </span>
-                <h3 className="mt-4 font-display text-lg font-semibold text-brown">
+                <h3 className="mt-4 font-display text-lg font-semibold text-ink">
                   {title}
                 </h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-brown/70">
+                <p className="mt-1.5 text-sm leading-relaxed text-ink/70">
                   {description}
                 </p>
               </div>

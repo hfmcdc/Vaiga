@@ -15,7 +15,7 @@ export const dynamic = "force-dynamic";
 export default async function ProductsPage() {
   const products = await getProducts();
   return (
-    <div className="bg-cream">
+    <div className="bg-night">
       <section className="mx-auto max-w-5xl px-5 sm:px-8 pt-14 pb-6 text-center">
         <SectionHeading
           eyebrow="Our menu"

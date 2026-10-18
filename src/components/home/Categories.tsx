@@ -7,7 +7,7 @@ import { categories } from "@/data/categories";
 
 export default function Categories() {
   return (
-    <section className="bg-cream">
+    <section className="bg-night">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 py-16 sm:py-24">
         <Reveal>
           <SectionHeading
@@ -22,7 +22,7 @@ export default function Categories() {
             <Reveal key={cat.slug} delayMs={i * 90}>
               <Link
                 href={`/products?category=${cat.slug}`}
-                className="group block h-full rounded-3xl bg-cream-soft shadow-[0_10px_30px_-14px_rgba(58,35,23,0.25)] overflow-hidden transition-transform duration-300 hover:-translate-y-1.5"
+                className="group block h-full rounded-3xl bg-night-soft shadow-[0_10px_30px_-14px_rgba(58,35,23,0.25)] overflow-hidden transition-transform duration-300 hover:-translate-y-1.5"
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
@@ -37,13 +37,13 @@ export default function Categories() {
                   <p className="text-2xl" aria-hidden="true">
                     {cat.emoji}
                   </p>
-                  <h3 className="mt-2 font-display text-xl font-semibold text-brown">
+                  <h3 className="mt-2 font-display text-xl font-semibold text-ink">
                     {cat.name}
                   </h3>
-                  <p className="mt-1.5 text-sm text-brown/70 leading-relaxed">
+                  <p className="mt-1.5 text-sm text-ink/70 leading-relaxed">
                     {cat.description}
                   </p>
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-maroon">
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-gold">
                     Explore
                     <ArrowRight
                       size={15}
