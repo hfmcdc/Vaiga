@@ -27,7 +27,7 @@ export default async function HomePage() {
       <FeaturedProducts />
       {festiveOn && (
         <>
-          <LeafDivider toColor="var(--color-maroon)" flip />
+          <LeafDivider toColor="var(--color-maroon-dark)" flip />
           <FestiveBanner />
           <LeafDivider toColor="var(--color-cream)" />
         </>

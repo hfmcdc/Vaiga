@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { CalendarHeart } from "lucide-react";
 import Reveal from "@/components/ui/Reveal";
+import MysteryBox from "@/components/ui/MysteryBox";
 import { getLiveSite } from "@/lib/siteStore";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 
@@ -10,32 +10,27 @@ export default async function FestiveBanner() {
   const c = site.content;
   if (!c.festiveOn) return null;
   return (
-    <section className="relative overflow-hidden bg-maroon">
-      <div className="absolute inset-0">
-        <Image src="/images/categories/festive-specials.svg" alt="" fill className="object-cover opacity-25" aria-hidden="true" />
-      </div>
-      <div className="pointer-events-none absolute -bottom-16 -left-16 h-64 w-64 rounded-full pookalam-accent opacity-20" />
-      <div className="relative mx-auto max-w-5xl px-5 sm:px-8 py-16 sm:py-24 text-center">
+    <section className="diwali-bg gold-frame relative overflow-hidden">
+      <div className="relative mx-auto grid max-w-6xl items-center gap-8 px-5 py-16 sm:px-8 sm:py-24 md:grid-cols-[1fr_320px]">
         <Reveal>
-          <span className="inline-flex items-center gap-2 rounded-full bg-cream-soft/15 px-4 py-1.5 text-xs font-semibold tracking-[0.2em] uppercase text-gold-soft">
+          <span className="inline-flex items-center gap-2 rounded-full border border-gold/60 bg-gold/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold-soft">
             <CalendarHeart size={14} aria-hidden="true" />
             {c.bannerBadge}
           </span>
-          <h2 className="mt-5 font-display text-3xl sm:text-4xl md:text-5xl font-semibold text-cream-soft leading-tight">
-            {c.bannerTitle}
-          </h2>
-          <p className="mt-5 max-w-2xl mx-auto text-base sm:text-lg text-cream-soft/85 leading-relaxed">{c.bannerText}</p>
+          <h2 className="mt-5 font-display text-3xl font-semibold leading-tight text-gold sm:text-4xl md:text-5xl">{c.bannerTitle}</h2>
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-cream-soft/85 sm:text-lg">{c.bannerText}</p>
           {c.bannerButton && (
             <a
               href={buildWhatsAppLink(c.bannerMessage, site)}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-brown transition-all hover:bg-gold-soft hover:-translate-y-0.5"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-brown shadow-[0_8px_30px_-6px_rgba(232,182,76,0.6)] transition-all hover:-translate-y-0.5 hover:bg-gold-soft"
             >
               {c.bannerButton}
             </a>
           )}
         </Reveal>
+        <MysteryBox className="mx-auto w-full max-w-[260px] md:max-w-none" />
       </div>
     </section>
   );

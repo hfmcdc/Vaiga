@@ -25,7 +25,7 @@ export default async function AboutPage() {
     <div className="bg-cream">
       <section className="mx-auto max-w-7xl px-5 sm:px-8 pt-14 pb-16 sm:pb-24 grid lg:grid-cols-2 gap-12 items-center">
         <Reveal>
-          <p className="font-display italic text-lg text-gold mb-2">Our story</p>
+          <p className="font-display italic text-lg text-maroon mb-2">Our story</p>
           <h1 className="font-display text-4xl sm:text-5xl font-semibold leading-tight text-brown">
             Since {siteConfig.since}
           </h1>

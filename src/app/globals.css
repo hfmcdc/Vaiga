@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --color-maroon: #c2410c;
-  --color-maroon-dark: #9a3412;
-  --color-cream: #fff8dc;
-  --color-cream-soft: #fffdf5;
-  --color-gold: #f5b800;
-  --color-gold-soft: #ffe04d;
-  --color-brown: #1f1409;
+  --color-maroon: #7f1426;
+  --color-maroon-dark: #3f070d;
+  --color-cream: #fff4dc;
+  --color-cream-soft: #fffaf0;
+  --color-gold: #e8b64c;
+  --color-gold-soft: #f5d88a;
+  --color-brown: #2b0d10;
   --color-green: #4f6b3a;
 }
 
@@ -98,4 +98,38 @@ body {
 .pookalam-accent {
   background-image: radial-gradient(circle, var(--color-gold) 1.5px, transparent 1.6px);
   background-size: 14px 14px;
+}
+
+/* ---- Diwali / Deepavali look: deep maroon + gold ---- */
+.diwali-bg {
+  background:
+    radial-gradient(circle at 72% 38%, rgba(232, 182, 76, 0.30), transparent 55%),
+    radial-gradient(circle at 10% 90%, rgba(232, 182, 76, 0.14), transparent 45%),
+    linear-gradient(160deg, #5a0b16 0%, #3f070d 70%);
+}
+.gold-frame { position: relative; }
+.gold-frame::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(232, 182, 76, 0.55);
+  border-radius: 14px;
+  pointer-events: none;
+}
+.bokeh {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(245, 216, 138, 0.9), rgba(232, 182, 76, 0) 70%);
+  animation: twinkle 3.6s ease-in-out infinite;
+  pointer-events: none;
+}
+.twinkle { animation: twinkle 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.float-slow { animation: float 5s ease-in-out infinite; }
+@keyframes twinkle {
+  0%, 100% { opacity: 0.25; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }

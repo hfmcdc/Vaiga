@@ -1,68 +1,67 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, MessageCircle, Phone } from "lucide-react";
+import MysteryBox from "@/components/ui/MysteryBox";
 import { getLiveSite } from "@/lib/siteStore";
 import { buildWhatsAppLink, buildTelLink } from "@/lib/whatsapp";
 
+const bokeh = [
+  ["8%", "18%", 22, "0s"], ["22%", "70%", 14, "0.8s"], ["48%", "10%", 18, "1.4s"],
+  ["62%", "82%", 26, "0.4s"], ["88%", "22%", 16, "2s"], ["92%", "68%", 20, "1.1s"], ["36%", "46%", 10, "2.4s"],
+] as const;
+
 export default async function Hero() {
-  const siteConfig = await getLiveSite();
+  const site = await getLiveSite();
+  const c = site.content;
   return (
-    <section className="relative overflow-hidden bg-cream">
-      <div className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full pookalam-accent opacity-40" />
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 pt-10 sm:pt-14 pb-16 sm:pb-24 grid lg:grid-cols-2 gap-12 items-center">
+    <section className="diwali-bg gold-frame relative overflow-hidden text-cream-soft">
+      {bokeh.map(([left, top, size, delay], i) => (
+        <span key={i} aria-hidden="true" className="bokeh" style={{ left, top, width: size, height: size, animationDelay: delay }} />
+      ))}
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-8 pt-12 sm:pt-16 pb-16 sm:pb-24 grid lg:grid-cols-2 gap-10 items-center">
         <div className="animate-fade-up order-2 lg:order-1">
-          <p className="inline-flex items-center gap-2 rounded-full bg-maroon/10 px-4 py-1.5 text-xs font-semibold tracking-[0.2em] uppercase text-maroon">
-            {siteConfig.content.heroEyebrow}
+          <p className="inline-flex items-center gap-2 rounded-full border border-gold/60 bg-gold/10 px-4 py-1.5 text-xs font-semibold tracking-[0.2em] uppercase text-gold-soft">
+            {c.heroEyebrow}
           </p>
-          <h1 className="mt-5 font-display text-4xl sm:text-5xl md:text-6xl font-semibold leading-[1.05] text-brown">
+          <h1 className="mt-5 font-display text-4xl sm:text-5xl md:text-6xl font-semibold leading-[1.05]">
             Vaiga Sweets
             <br />
-            <span className="text-maroon">&amp; Snacks</span>
+            <span className="text-gold">&amp; Snacks</span>
           </h1>
-          <p className="mt-4 font-display italic text-xl sm:text-2xl text-gold">
-            {siteConfig.tagline}
-          </p>
-          <p className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-brown/75">
-            {siteConfig.content.heroText}
-          </p>
+          <p className="mt-4 font-display italic text-xl sm:text-2xl text-gold-soft">{site.tagline}</p>
+          <p className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-cream-soft/85">{c.heroText}</p>
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <Link
               href="/products"
-              className="inline-flex items-center gap-2 rounded-full bg-maroon px-6 py-3.5 text-sm font-semibold text-cream-soft transition-all hover:bg-maroon-dark hover:-translate-y-0.5 shadow-[0_8px_24px_-8px_rgba(107,30,46,0.55)]"
+              className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3.5 text-sm font-semibold text-brown shadow-[0_8px_30px_-6px_rgba(232,182,76,0.6)] transition-all hover:bg-gold-soft hover:-translate-y-0.5"
             >
               Explore Our Products
               <ArrowRight size={16} aria-hidden="true" />
             </Link>
             <a
-              href={buildWhatsAppLink(undefined, siteConfig)}
+              href={buildWhatsAppLink(undefined, site)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3.5 text-sm font-semibold text-brown transition-all hover:bg-gold-soft hover:-translate-y-0.5 shadow-[0_8px_24px_-8px_rgba(201,154,61,0.5)]"
+              className="inline-flex items-center gap-2 rounded-full border-2 border-gold px-6 py-3.5 text-sm font-semibold text-gold-soft transition-all hover:bg-gold hover:text-brown hover:-translate-y-0.5"
             >
               <MessageCircle size={16} aria-hidden="true" />
               Order Now
             </a>
             <a
-              href={buildTelLink(siteConfig)}
-              className="inline-flex items-center gap-2 rounded-full border-2 border-brown px-6 py-3.5 text-sm font-semibold text-brown transition-all hover:bg-brown hover:text-cream-soft"
+              href={buildTelLink(site)}
+              className="inline-flex items-center gap-2 px-2 py-3.5 text-sm font-semibold text-cream-soft/90 underline-offset-4 hover:underline"
             >
               <Phone size={16} aria-hidden="true" />
-              Call {siteConfig.phone}
+              {site.phone}
             </a>
           </div>
         </div>
 
-        <div className="order-1 lg:order-2 relative animate-fade-in">
-          <div
-            className="relative mx-auto aspect-[4/3.5] w-full max-w-md lg:max-w-none overflow-hidden bg-gold shadow-[0_30px_60px_-20px_rgba(58,35,23,0.4)]"
-            style={{
-              borderRadius: "62% 38% 55% 45% / 48% 45% 55% 52%",
-            }}
-          >
-            <Image src="/images/logo.png" alt="Vaiga Sweets & Snacks logo" fill priority className="object-contain p-6" sizes="(max-width: 1024px) 90vw, 45vw" />
-          </div>
-          <div className="absolute -bottom-4 -left-4 h-20 w-20 sm:h-24 sm:w-24 rounded-full bg-gold/90 pookalam-accent opacity-70" />
+        <div className="order-1 lg:order-2 relative animate-fade-in text-center">
+          <MysteryBox className="mx-auto w-full max-w-[320px] sm:max-w-sm lg:max-w-md" />
+          <p className="mx-auto -mt-2 inline-block rounded-full bg-gold px-6 py-2 font-display text-sm sm:text-base font-semibold tracking-wide text-brown shadow-[0_8px_30px_-6px_rgba(232,182,76,0.7)]">
+            {c.bannerTitle} · {c.bannerBadge}
+          </p>
         </div>
       </div>
     </section>
